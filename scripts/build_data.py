@@ -33,7 +33,8 @@ change_types = {
 archived_indicators=pd.read_csv('archived_indicators.csv')
 changed_indicators=pd.read_csv('changed_indicators.csv')
 
-def alter_meta(meta):
+def alter_meta(meta, context):
+    print("indicator_id"+context["indicator_id"])
     if 'indicator_number' in meta:
         indicator_id = meta['indicator_number']
         id_parts = indicator_id.split('.')
@@ -63,6 +64,9 @@ def alter_meta(meta):
                     meta['page_content']="<strong>No data was sourced for this indicator</strong>"+meta['page_content']
 
     return meta
+
+#def my_indicator_id_alteration(indicator_id, context):
+#    if context['indicator_name'] == 'My particular indicator name'
   
 open_sdg_build(config='config_data.yml', alter_meta=alter_meta)
 
