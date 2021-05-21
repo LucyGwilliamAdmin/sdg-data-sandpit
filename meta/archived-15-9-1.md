@@ -19,7 +19,6 @@ source_active_5: false
 source_active_6: false
 indicator_sort_order: 15-09-01
 other_info: Data follows the UN specification for this indicator. 
-standalone: true
 ---
 The United Kingdom (UK) reported progress against the Aichi biodiversity targets as opposed to national targets to the United Nations Convention on Biological Diversity.  The UK published its [sixth national report](https://jncc.gov.uk/our-work/united-kingdom-s-6th-national-report-to-the-convention-on-biological-diversity/) in March 2019.  This report showed the UK is on track to achieve 5 (25%) of the Aichi Targets by their deadlines. Progress is being made towards achieving 14 (70%) of the targets. There is 1 target that was not assessed. 
 
