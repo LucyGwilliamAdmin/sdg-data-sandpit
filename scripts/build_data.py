@@ -34,6 +34,7 @@ archived_indicators=pd.read_csv('archived_indicators.csv')
 changed_indicators=pd.read_csv('changed_indicators.csv')
 
 def alter_meta(meta, context):
+    print("INDICATOR_ID: "+context['indicator_id'])
     if 'indicator_number' in meta:
         indicator_id = meta['indicator_number']
         id_parts = indicator_id.split('.')
@@ -43,7 +44,7 @@ def alter_meta(meta, context):
         meta['goal_meta_link_text'] = 'United Nations Sustainable Development Goals metadata for target '+target_id
     
     if "archived" in context['indicator_id']:
-        meta['standalone]="true"
+        meta['standalone']="true"
 
         if 'standalone' not in meta:
             if tier_df is not None:
