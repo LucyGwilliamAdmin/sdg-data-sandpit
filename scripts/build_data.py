@@ -34,7 +34,6 @@ archived_indicators=pd.read_csv('archived_indicators.csv')
 changed_indicators=pd.read_csv('changed_indicators.csv')
 
 def alter_meta(meta, context):
-    print("indicator_id"+context["indicator_id"])
     if 'indicator_number' in meta:
         indicator_id = meta['indicator_number']
         id_parts = indicator_id.split('.')
@@ -42,6 +41,9 @@ def alter_meta(meta, context):
         goal_id = id_parts[0]
         meta['goal_meta_link'] = 'https://unstats.un.org/sdgs/metadata/?Text=&Goal='+goal_id+'&Target='+target_id
         meta['goal_meta_link_text'] = 'United Nations Sustainable Development Goals metadata for target '+target_id
+    
+    if "archived" in context['indicator_id']:
+        meta['standalone]="true"
 
         if 'standalone' not in meta:
             if tier_df is not None:
@@ -62,11 +64,15 @@ def alter_meta(meta, context):
                 meta['goal_meta_link_text'] = 'United Nations Sustainable Development Goals compilation of previous metadata'
                 if meta['reporting_status']=="notstarted":
                     meta['page_content']="<strong>No data was sourced for this indicator</strong>"+meta['page_content']
+             
 
     return meta
 
-#def my_indicator_id_alteration(indicator_id, context):
-#    if context['indicator_name'] == 'My particular indicator name'
+def my_indicator_id_alteration(indicator_id, context):
+    if "archived" in context['indicator_id']:
+         indicator_id="archived_indicator_"+context['meta']['indicator_number'].replace(".","-")
+    return indicator_id
+        
   
-open_sdg_build(config='config_data.yml', alter_meta=alter_meta)
+open_sdg_build(config='config_data.yml', alter_meta=alter_meta, add_indicator_id_alteration=my_indicator_id_alteration)
 
