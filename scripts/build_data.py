@@ -70,7 +70,7 @@ def alter_meta(meta, context):
     return meta
 
 def my_indicator_id_alteration(indicator_id, context):
-    if "archived" in context['indicator_id']:
+    if "archived" in indicator_id:
          indicator_id="archived_indicator_"+context['meta']['indicator_number'].replace(".","-")
     return indicator_id
         
