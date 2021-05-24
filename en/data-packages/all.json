@@ -15539,7 +15539,7 @@
           }
         ]
       },
-      "title": "Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)"
+      "title": "1-1-1"
     },
     {
       "path": "6-6-1/data.csv",
@@ -21000,6 +21000,30 @@
         ]
       },
       "title": "Amount of support to developing countries on research and development for sustainable consumption and production and environmentally sound technologies"
+    },
+    {
+      "path": "1-11-1/data.csv",
+      "name": "1-11-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          },
+          {
+            "name": "Year",
+            "type": "number",
+            "title": "Year"
+          }
+        ]
+      },
+      "title": "Indicator name alteration test"
     },
     {
       "path": "2-2-3/data.csv",
