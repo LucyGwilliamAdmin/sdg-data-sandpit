@@ -34,7 +34,7 @@ archived_indicators=pd.read_csv('archived_indicators.csv')
 changed_indicators=pd.read_csv('changed_indicators.csv')
 
 def indicator_id_alteration(indicator_id, context):
-    if context['indicator_name'] == 'Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services':
+    if context['indicator_name'] == 'Proportion of population below the international poverty line, by sex, age, employment status and geographical location (urban/rural)':
         return '1-11-1'
     else:
         return indicator_id
