@@ -34,12 +34,14 @@ archived_indicators=pd.read_csv('archived_indicators.csv')
 changed_indicators=pd.read_csv('changed_indicators.csv')
 
 def my_indicator_id_alteration(indicator_id, context):
+    print("INDICATOR_ID: "+indicator_id)
     if context['indicator_name'] == 'Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services':
         return '1.11.1'
     else:
         return indicator_id
     
 def my_indicator_name_alteration(indicator_name, context):
+    print("INDICATOR_ID: "+context['indicator_id'])
     if context['indicator_id']=='1.11.1':
         return 'Indicator name alteration test'
     else:
