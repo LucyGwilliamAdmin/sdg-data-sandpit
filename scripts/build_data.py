@@ -75,5 +75,5 @@ def my_indicator_id_alteration(indicator_id, context):
     return indicator_id
         
   
-open_sdg_build(config='config_data.yml', alter_meta=alter_meta, add_indicator_id_alteration=my_indicator_id_alteration)
+open_sdg_build(config='config_data.yml', alter_meta=alter_meta, alter_indicator_id=my_indicator_id_alteration)
 
