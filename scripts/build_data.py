@@ -82,5 +82,5 @@ def alter_meta(meta, context):
 
         
   
-open_sdg_build(config='config_data.yml', alter_indicator_id=my_indicator_id_alteration)
+open_sdg_build(config='config_data.yml', alter_meta=alter_meta, alter_indicator_id=indicator_id_alteration, alter_indicator_name=indicator_name_alteration)
 
