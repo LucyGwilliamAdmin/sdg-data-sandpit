@@ -46,7 +46,6 @@ def indicator_name_alteration(indicator_name, context):
         return indicator_name
 
 def alter_meta(meta, context):
-    print("INDICATOR_ID: "+context['indicator_id'])
     if 'indicator_number' in meta:
         inid = meta['indicator_number']
         id_parts = inid.split('.')
@@ -75,7 +74,7 @@ def alter_meta(meta, context):
             if meta['reporting_status']=="notstarted":
                 meta['page_content']="<strong>No data was sourced for this indicator</strong>"+meta['page_content']
 
-
+    print(context)
     return meta
 
 
