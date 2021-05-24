@@ -61,8 +61,8 @@ def alter_meta(meta, context):
                     meta['un_designated_tier']=tier_df.loc[inid][0]
                 if inid in changed_indicators['number'].values:
                     meta['change_notice']=change_types[changed_indicators.loc[changed_indicators['number']==inid]['change_type'].values[0]]
-        elif inid in archived_indicators['number'].values:
-            meta['standalone']='true'
+        if 'archived' in context['indicator_id']:
+            meta['standalone']=True
             meta['indicator_name']=archived_indicators.loc[archived_indicators['number']==inid]['name'].values[0]
             meta['archive_type']=archived_indicators.loc[archived_indicators['number']==inid]['archive_type'].values[0]
             meta['un_designated_tier']=archived_indicators.loc[archived_indicators['number']==inid]['tier'].values[0]
