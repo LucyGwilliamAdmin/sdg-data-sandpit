@@ -35,9 +35,9 @@ changed_indicators=pd.read_csv('changed_indicators.csv')
 
 def my_indicator_id_alteration(indicator_id, context):
     if context['indicator_name'] == 'Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services':
-    return '1.11.1'
-  else:
-    return indicator_id
+        return '1.11.1'
+    else:
+        return indicator_id
 
 def alter_meta(meta, context):
     print("INDICATOR_ID: "+context['indicator_id'])
