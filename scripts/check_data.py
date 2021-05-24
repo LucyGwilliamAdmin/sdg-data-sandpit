@@ -6,7 +6,7 @@ tier_spreadsheet_url = 'https://unstats.un.org/sdgs/files/Tier%20Classification%
 
 while True:
     try:
-        tier_df = pd.read_excel(tier_spreadsheet_url, "Updated Tier classification", usecols=[2,6], names=['indicator', 'tier'], header=1).dropna(axis=0, subset=["indicator"])
+        tier_df = pd.read_excel(tier_spreadsheet_url, "Updated Tier classification", usecols=[2,6], names=['indicator', 'tier'], header=1).dropna(axis=0, subset=["indicator"], engine="openpyxl")
         tier_df=tier_df[tier_df["indicator"]!="\n"]
         for i in tier_df.index:
             indicator_code=tier_df.loc[i, "indicator"]
