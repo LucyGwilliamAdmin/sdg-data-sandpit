@@ -40,7 +40,7 @@ def my_indicator_id_alteration(indicator_id, context):
         return indicator_id
     
 def my_indicator_name_alteration(indicator_name, context):
-    if context['indicator_id']=='1.11.1:
+    if context['indicator_id']=='1.11.1':
         return 'Indicator name alteration test'
     else:
         return indicator_id
