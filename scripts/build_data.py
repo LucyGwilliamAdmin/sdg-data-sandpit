@@ -45,7 +45,7 @@ def indicator_name_alteration(indicator_name, context):
     if context['indicator_id']=='1.11.1':
         return 'Indicator name alteration test'
     else:
-        return indicator_id
+        return indicator_name
 
 def alter_meta(meta, context):
     print("INDICATOR_ID: "+context['indicator_id'])
