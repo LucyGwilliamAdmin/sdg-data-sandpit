@@ -34,24 +34,22 @@ archived_indicators=pd.read_csv('archived_indicators.csv')
 changed_indicators=pd.read_csv('changed_indicators.csv')
 
 def indicator_id_alteration(indicator_id, context):
-    print("INDICATOR_ID: "+indicator_id)
     if context['indicator_name'] == 'Investments in energy efficiency as a proportion of GDP and the amount of foreign direct investment in financial transfer for infrastructure and technology to sustainable development services':
-        return '1.11.1'
+        return '1-11-1'
     else:
         return indicator_id
     
 def indicator_name_alteration(indicator_name, context):
-    print("INDICATOR_ID: "+context['indicator_id'])
-    if context['indicator_id']=='1.11.1':
+    if context['indicator_id']=='1-11-1':
         return 'Indicator name alteration test'
     else:
-        return indicator_name
+        return return indicator_name
 
 def alter_meta(meta, context):
     print("INDICATOR_ID: "+context['indicator_id'])
     if 'indicator_number' in meta:
-        indicator_id = meta['indicator_number']
-        id_parts = indicator_id.split('.')
+        inid = meta['indicator_number']
+        id_parts = inid.split('.')
         target_id = id_parts[0] + '.' + id_parts[1]
         goal_id = id_parts[0]
         meta['goal_meta_link'] = 'https://unstats.un.org/sdgs/metadata/?Text=&Goal='+goal_id+'&Target='+target_id
@@ -59,15 +57,15 @@ def alter_meta(meta, context):
 
         if 'standalone' not in meta:
             if tier_df is not None:
-                if indicator_id in list(tier_df.index):
-                    meta['un_designated_tier']=tier_df.loc[indicator_id][0]
-                if indicator_id in changed_indicators['number'].values:
-                    meta['change_notice']=change_types[changed_indicators.loc[changed_indicators['number']==indicator_id]['change_type'].values[0]]
-        elif indicator_id in archived_indicators['number'].values:
+                if inid in list(tier_df.index):
+                    meta['un_designated_tier']=tier_df.loc[inid][0]
+                if inid in changed_indicators['number'].values:
+                    meta['change_notice']=change_types[changed_indicators.loc[changed_indicators['number']==inid]['change_type'].values[0]]
+        elif inid in archived_indicators['number'].values:
             meta['standalone']='true'
-            meta['indicator_name']=archived_indicators.loc[archived_indicators['number']==indicator_id]['name'].values[0]
-            meta['archive_type']=archived_indicators.loc[archived_indicators['number']==indicator_id]['archive_type'].values[0]
-            meta['un_designated_tier']=archived_indicators.loc[archived_indicators['number']==indicator_id]['tier'].values[0]
+            meta['indicator_name']=archived_indicators.loc[archived_indicators['number']==inid]['name'].values[0]
+            meta['archive_type']=archived_indicators.loc[archived_indicators['number']==inid]['archive_type'].values[0]
+            meta['un_designated_tier']=archived_indicators.loc[archived_indicators['number']==inid]['tier'].values[0]
             meta["permalink"]='archived-indicators/'+id_parts[0]+'-'+id_parts[1]+'-'+id_parts[2]+'-archived'
             meta['data_notice_class']="blank"
             meta['data_notice_heading']="This is an <a href='https://sdgdata.gov.uk/archived-indicators'>archived</a> indicator"
