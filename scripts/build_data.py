@@ -62,7 +62,7 @@ def alter_meta(meta, context):
                 if indicator_id in changed_indicators['number'].values:
                     meta['change_notice']=change_types[changed_indicators.loc[changed_indicators['number']==indicator_id]['change_type'].values[0]]
         elif indicator_id in archived_indicators['number'].values:
-            meta['standalone]='true'
+            meta['standalone']='true'
             meta['indicator_name']=archived_indicators.loc[archived_indicators['number']==indicator_id]['name'].values[0]
             meta['archive_type']=archived_indicators.loc[archived_indicators['number']==indicator_id]['archive_type'].values[0]
             meta['un_designated_tier']=archived_indicators.loc[archived_indicators['number']==indicator_id]['tier'].values[0]
