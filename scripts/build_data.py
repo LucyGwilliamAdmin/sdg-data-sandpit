@@ -33,19 +33,19 @@ change_types = {
 archived_indicators=pd.read_csv('archived_indicators.csv')
 changed_indicators=pd.read_csv('changed_indicators.csv')
 
-def indicator_id_alteration(indicator_id, context):
-    if context['indicator_name'] == 'global_indicators.1-1-1-title':
-        return '1-11-1'
-    else:
-        return indicator_id
+#def indicator_id_alteration(indicator_id, context):
+#    if context['indicator_name'] == 'global_indicators.1-1-1-title':
+#        return '1-11-1'
+#    else:
+#        return indicator_id
     
-def indicator_name_alteration(indicator_name, context):
-    if context['indicator_id']=='1-11-1':
-        return 'Indicator name alteration test'
-    else:
-        return indicator_name
+#def indicator_name_alteration(indicator_name, context):
+#    if context['indicator_id']=='1-11-1':
+#        return 'Indicator name alteration test'
+#    else:
+#        return indicator_name
 
-def alter_meta(meta, context):
+def alter_meta(meta):
     if 'indicator_number' in meta:
         inid = meta['indicator_number']
         id_parts = inid.split('.')
@@ -60,26 +60,26 @@ def alter_meta(meta, context):
                     meta['un_designated_tier']=tier_df.loc[inid][0]
                 if inid in changed_indicators['number'].values:
                     meta['change_notice']=change_types[changed_indicators.loc[changed_indicators['number']==inid]['change_type'].values[0]]
-        if 'archived' in context['indicator_id']:
-            meta['standalone']=True
-            meta['indicator_name']=archived_indicators.loc[archived_indicators['number']==inid]['name'].values[0]
-            meta['archive_type']=archived_indicators.loc[archived_indicators['number']==inid]['archive_type'].values[0]
-            meta['un_designated_tier']=archived_indicators.loc[archived_indicators['number']==inid]['tier'].values[0]
-            meta["permalink"]='archived-indicators/'+id_parts[0]+'-'+id_parts[1]+'-'+id_parts[2]+'-archived'
-            meta['data_notice_class']="blank"
-            meta['data_notice_heading']="This is an <a href='https://sdgdata.gov.uk/archived-indicators'>archived</a> indicator"
-            meta['data_notice_text']=archive_types[meta['archive_type']]
-            meta['goal_meta_link'] = 'https://unstats.un.org/sdgs/iaeg-sdgs/metadata-compilation/'
-            meta['goal_meta_link_text'] = 'United Nations Sustainable Development Goals compilation of previous metadata'
-            if meta['reporting_status']=="notstarted":
-                meta['page_content']="<strong>No data was sourced for this indicator</strong>"+meta['page_content']
+#        if 'archived' in context['indicator_id']:
+#            meta['standalone']=True
+#            meta['indicator_name']=archived_indicators.loc[archived_indicators['number']==inid]['name'].values[0]
+#            meta['archive_type']=archived_indicators.loc[archived_indicators['number']==inid]['archive_type'].values[0]
+#            meta['un_designated_tier']=archived_indicators.loc[archived_indicators['number']==inid]['tier'].values[0]
+#            meta["permalink"]='archived-indicators/'+id_parts[0]+'-'+id_parts[1]+'-'+id_parts[2]+'-archived'
+#            meta['data_notice_class']="blank"
+#            meta['data_notice_heading']="This is an <a href='https://sdgdata.gov.uk/archived-indicators'>archived</a> indicator"
+#            meta['data_notice_text']=archive_types[meta['archive_type']]
+#            meta['goal_meta_link'] = 'https://unstats.un.org/sdgs/iaeg-sdgs/metadata-compilation/'
+#            meta['goal_meta_link_text'] = 'United Nations Sustainable Development Goals compilation of previous metadata'
+#            if meta['reporting_status']=="notstarted":
+#                meta['page_content']="<strong>No data was sourced for this indicator</strong>"+meta['page_content']
 
-    print(context)
+#    print(context)
     return meta
 
 
 
         
   
-open_sdg_build(config='config_data.yml', alter_meta=alter_meta, alter_indicator_id=indicator_id_alteration, alter_indicator_name=indicator_name_alteration)
+open_sdg_build(config='config_data.yml', alter_meta=alter_meta)
 
