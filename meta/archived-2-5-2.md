@@ -36,5 +36,6 @@ source_active_5: false
 source_active_6: false
 indicator_sort_order: 02-05-02
 other_info: This indicator is being used as an approximation of the UN SDG Indicator. Where possible, we will work to identify or develop UK data to meet the global indicator specification. This indicator has not been identified in collaboration with topic experts.
+standalone: true
 ---
 This indicator is being used as an approximation of the UN SDG Indicator and has been identified in collaboration with topic experts. We will work to identify or develop UK data to meet the global indicator specification. 
