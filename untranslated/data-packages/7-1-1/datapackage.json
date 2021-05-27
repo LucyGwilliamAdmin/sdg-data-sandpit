@@ -11,26 +11,7 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Urban or Rural",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Urban",
-                "Rural",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Unit multiplier",
             "type": "string"
           },
           {
@@ -38,8 +19,27 @@
             "type": "string"
           },
           {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Urban or Rural",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Rural",
+                "Urban"
+              ]
+            }
+          },
+          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

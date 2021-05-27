@@ -11,17 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Security",
             "type": "string",
             "constraints": {
               "enum": [
-                "Perceived",
+                "",
                 "Documented",
-                ""
+                "Perceived"
               ]
             }
           },
@@ -30,19 +30,15 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Formal",
                 "Informal Documentation",
-                "No Documentation",
-                ""
+                "No Documentation"
               ]
             }
           },
           {
             "name": "Unit measure",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
             "type": "string"
           },
           {
@@ -52,6 +48,10 @@
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

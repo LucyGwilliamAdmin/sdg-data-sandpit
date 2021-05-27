@@ -11,33 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "string"
-          },
-          {
-            "name": "Type of partner abuse",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Non-sexual",
-                "Sexual (including attempts)",
-                "Stalking by a partner/ex-partner",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Abuse sub-category",
             "type": "string",
             "constraints": {
               "enum": [
-                "Non-physical abuse (emotional, financial)",
-                "Threats or force",
-                "Threats",
+                "",
                 "Force",
-                "Sexual assault by rape or penetration (including attempts)",
                 "Indecent exposure or unwanted sexual touching by a partner",
-                ""
+                "Non-physical abuse (emotional, financial)",
+                "Sexual assault by rape or penetration (including attempts)",
+                "Threats",
+                "Threats or force"
               ]
             }
           },
@@ -46,51 +30,13 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "16 to 19",
                 "20 to 24",
                 "25 to 34",
                 "35 to 44",
                 "45 to 54",
-                "55 to 59",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Ethnicity",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "White",
-                "Asian/Asian British",
-                "Black/African/Caribbean/Black British",
-                "Other ethnic group",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Ethnic group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "English/Welsh/Scottish/Northern Irish/British",
-                "Any other White background",
-                "Indian",
-                "Any other Asian background",
-                "African",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Disability status",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Disabled (GSS harmonised)",
-                "Non-disabled (GSS harmonised)",
-                ""
+                "55 to 59"
               ]
             }
           },
@@ -99,52 +45,100 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Born in UK",
-                "Not born in UK",
-                ""
+                "Not born in UK"
               ]
             }
           },
           {
-            "name": "Region",
+            "name": "Disability status",
             "type": "string",
             "constraints": {
               "enum": [
-                "North East",
-                "North West",
-                "Yorkshire and the Humber",
-                "East Midlands",
-                "West Midlands",
-                "East of England",
-                "London",
-                "South East",
-                "South West",
-                "Wales",
-                ""
+                "",
+                "Disabled (GSS harmonised)",
+                "Non-disabled (GSS harmonised)"
               ]
             }
+          },
+          {
+            "name": "Ethnic group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "African",
+                "Any other Asian background",
+                "Any other White background",
+                "English/Welsh/Scottish/Northern Irish/British",
+                "Indian"
+              ]
+            }
+          },
+          {
+            "name": "Ethnicity",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Asian/Asian British",
+                "Black/African/Caribbean/Black British",
+                "Other ethnic group",
+                "White"
+              ]
+            }
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Highest qualification",
             "type": "string",
             "constraints": {
               "enum": [
-                "Degree or diploma",
+                "",
                 "Apprenticeship or A/AS level",
-                "O level/GCSE",
-                "Other qualification",
+                "Degree or diploma",
                 "No qualification",
-                ""
+                "O level/GCSE",
+                "Other qualification"
               ]
             }
           },
           {
-            "name": "Units",
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percentage (%)",
-                ""
+                "",
+                "East Midlands",
+                "East of England",
+                "London",
+                "North East",
+                "North West",
+                "South East",
+                "South West",
+                "Wales",
+                "West Midlands",
+                "Yorkshire and the Humber"
+              ]
+            }
+          },
+          {
+            "name": "Type of partner abuse",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Non-sexual",
+                "Sexual (including attempts)",
+                "Stalking by a partner/ex-partner"
               ]
             }
           },
@@ -153,16 +147,22 @@
             "type": "string"
           },
           {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Percentage (%)"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "string"
           }
         ]
       }

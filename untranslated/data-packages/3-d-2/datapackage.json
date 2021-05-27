@@ -11,38 +11,23 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "string"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "MRSA bloodstream infection",
-                "Proportion (%) of 3rd generation cephalosporin resistant E. coli blood specimens",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "England",
-                "Wales",
                 "Northern Ireland",
-                ""
+                "Wales"
               ]
             }
           },
           {
-            "name": "Observation status",
+            "name": "GeoCode",
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -50,12 +35,27 @@
             "type": "string"
           },
           {
-            "name": "GeoCode",
+            "name": "Unit multiplier",
             "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "MRSA bloodstream infection",
+                "Proportion (%) of 3rd generation cephalosporin resistant E. coli blood specimens"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "string"
           }
         ]
       }

@@ -11,95 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "string"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percentage of adults aged 16 to 59 (%)",
-                "Percentage of adults aged 16 to 74 (%)",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Men",
-                "Women",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Relationship to perpetrator",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Partner",
-                "Family member",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "16 to 19",
                 "20 to 24",
                 "25 to 34",
                 "35 to 44",
                 "45 to 54",
-                "55 to 59",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Ethnicity",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "White",
-                "Mixed/Multiple ethnic groups",
-                "Asian/Asian British",
-                "Black/African/Caribbean/Black British",
-                "Other ethnic group",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Income",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Less than £10,000",
-                "£10,000 to less than £20,000",
-                "£20,000 to less than £30,000",
-                "£30,000 to less than £40,000",
-                "£40,000 to less than £50,000",
-                "£50,000 or more",
-                "No income stated or not enough information provided",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Disability status",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Disabled (GSS harmonised)",
-                "Non-disabled (GSS harmonised)",
-                ""
+                "55 to 59"
               ]
             }
           },
@@ -108,28 +30,54 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Born in UK",
-                "Not born in UK",
-                ""
+                "Not born in UK"
               ]
             }
           },
           {
-            "name": "Region",
+            "name": "Disability status",
             "type": "string",
             "constraints": {
               "enum": [
-                "North East",
-                "North West",
-                "Yorkshire and the Humber",
-                "East Midlands",
-                "West Midlands",
-                "East of England",
-                "London",
-                "South East",
-                "South West",
-                "Wales",
-                ""
+                "",
+                "Disabled (GSS harmonised)",
+                "Non-disabled (GSS harmonised)"
+              ]
+            }
+          },
+          {
+            "name": "Ethnicity",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Asian/Asian British",
+                "Black/African/Caribbean/Black British",
+                "Mixed/Multiple ethnic groups",
+                "Other ethnic group",
+                "White"
+              ]
+            }
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Income",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Less than £10,000",
+                "No income stated or not enough information provided",
+                "£10,000 to less than £20,000",
+                "£20,000 to less than £30,000",
+                "£30,000 to less than £40,000",
+                "£40,000 to less than £50,000",
+                "£50,000 or more"
               ]
             }
           },
@@ -138,20 +86,72 @@
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
-            "type": "string"
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "East Midlands",
+                "East of England",
+                "London",
+                "North East",
+                "North West",
+                "South East",
+                "South West",
+                "Wales",
+                "West Midlands",
+                "Yorkshire and the Humber"
+              ]
+            }
+          },
+          {
+            "name": "Relationship to perpetrator",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Family member",
+                "Partner"
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Men",
+                "Women"
+              ]
+            }
           },
           {
             "name": "Unit measure",
             "type": "string"
           },
           {
-            "name": "GeoCode",
+            "name": "Unit multiplier",
             "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Percentage of adults aged 16 to 59 (%)",
+                "Percentage of adults aged 16 to 74 (%)"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "string"
           }
         ]
       }

@@ -11,31 +11,15 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Domestic material consumption (Million metric tonnes)",
-                "Domestic material consumption per capita (Tonnes)",
-                "Domestic material consumption per GDP (Tonnes per £m)",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Material category",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Biomass",
-                "Metal ores",
-                "Non-metallic minerals",
                 "Fossil fuels",
-                ""
+                "Metal ores",
+                "Non-metallic minerals"
               ]
             }
           },
@@ -44,16 +28,32 @@
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
-            "type": "string"
-          },
-          {
             "name": "Unit measure",
             "type": "string"
           },
           {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Domestic material consumption (Million metric tonnes)",
+                "Domestic material consumption per GDP (Tonnes per £m)",
+                "Domestic material consumption per capita (Tonnes)"
+              ]
+            }
+          },
+          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

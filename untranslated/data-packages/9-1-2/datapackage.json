@@ -11,28 +11,13 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Passengers (thousands)",
-                "Freight (thousand tonnes)",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Flight category",
             "type": "string",
             "constraints": {
               "enum": [
-                "International",
+                "",
                 "Domestic",
-                ""
+                "International"
               ]
             }
           },
@@ -41,16 +26,31 @@
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
-            "type": "string"
-          },
-          {
             "name": "Unit measure",
             "type": "string"
           },
           {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Freight (thousand tonnes)",
+                "Passengers (thousands)"
+              ]
+            }
+          },
+          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

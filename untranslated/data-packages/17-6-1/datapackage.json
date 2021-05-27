@@ -11,29 +11,18 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Speed (mb/sec)",
             "type": "string",
             "constraints": {
               "enum": [
-                "Between 2 mbps and 10 mbps",
-                "Between 256 kbps and 2 mbps",
+                "",
                 "10 mbps and over",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Rate per 100 population",
-                "Number",
-                ""
+                "Between 2 mbps and 10 mbps",
+                "Between 256 kbps and 2 mbps"
               ]
             }
           },
@@ -42,12 +31,23 @@
             "type": "string"
           },
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Number",
+                "Rate per 100 population"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

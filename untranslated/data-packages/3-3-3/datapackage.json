@@ -11,53 +11,26 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Rate per 100,000 population",
-                "Number of cases",
-                "Percentage (%) of total cases",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Male",
-                "Female",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
-                "4 and under",
-                "5 to 9",
+                "",
                 "10 to 14",
                 "15 to 19",
                 "20 to 24",
                 "25 to 29",
                 "30 to 34",
                 "35 to 39",
+                "4 and under",
                 "40 to 44",
                 "45 to 49",
+                "5 to 9",
                 "50 to 54",
                 "55 to 59",
                 "60 to 64",
                 "65 to 69",
-                "70 and over",
-                ""
+                "70 and over"
               ]
             }
           },
@@ -66,56 +39,11 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "England",
-                "Scotland",
-                "Wales",
                 "Northern Ireland",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "London",
-                "South East",
-                "West Midlands",
-                "North West",
-                "East of England",
-                "Yorkshire and the Humber",
-                "South West",
-                "East Midlands",
-                "North East",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Malaria species",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "P. falciparum",
-                "P. vivax",
-                "P. ovale",
-                "P. malariae",
-                "P. knowlesi",
-                "Mixed",
-                "P. unspecified",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Fatality",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Fatal",
-                "Non-fatal",
-                ""
+                "Scotland",
+                "Wales"
               ]
             }
           },
@@ -124,12 +52,12 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Born in Africa",
-                "Born in UK",
-                "Born in Indian subcontinent",
                 "Born in Europe (non-UK)",
-                "Other country of birth",
-                ""
+                "Born in Indian subcontinent",
+                "Born in UK",
+                "Other country of birth"
               ]
             }
           },
@@ -138,34 +66,42 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Black African/African descent",
                 "Indian/Pakistani/Bangladesh (ISC)/ISC descent",
                 "Other/Mixed",
-                "White British",
-                ""
+                "White British"
               ]
             }
           },
           {
-            "name": "Region of travel",
+            "name": "Fatality",
             "type": "string",
             "constraints": {
               "enum": [
-                "Western Africa",
-                "Eastern Africa",
-                "Middle Africa",
-                "Northern Africa",
-                "Southern Africa",
-                "Africa unspecified",
-                "Southern Asia",
-                "South-Eastern Asia",
-                "Western Asia",
-                "Caribbean",
-                "Central America",
-                "South America",
-                "Oceania",
-                "Not stated",
-                ""
+                "",
+                "Fatal",
+                "Non-fatal"
+              ]
+            }
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Malaria species",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Mixed",
+                "P. falciparum",
+                "P. knowlesi",
+                "P. malariae",
+                "P. ovale",
+                "P. unspecified",
+                "P. vivax"
               ]
             }
           },
@@ -174,20 +110,84 @@
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
-            "type": "string"
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "East Midlands",
+                "East of England",
+                "London",
+                "North East",
+                "North West",
+                "South East",
+                "South West",
+                "West Midlands",
+                "Yorkshire and the Humber"
+              ]
+            }
+          },
+          {
+            "name": "Region of travel",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Africa unspecified",
+                "Caribbean",
+                "Central America",
+                "Eastern Africa",
+                "Middle Africa",
+                "Northern Africa",
+                "Not stated",
+                "Oceania",
+                "South America",
+                "South-Eastern Asia",
+                "Southern Africa",
+                "Southern Asia",
+                "Western Africa",
+                "Western Asia"
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Female",
+                "Male"
+              ]
+            }
           },
           {
             "name": "Unit measure",
             "type": "string"
           },
           {
-            "name": "GeoCode",
+            "name": "Unit multiplier",
             "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Number of cases",
+                "Percentage (%) of total cases",
+                "Rate per 100,000 population"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

@@ -11,17 +11,13 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
             "name": "Developing country participation",
             "type": "string",
             "constraints": {
               "enum": [
-                "Voting rights in international organisations",
+                "",
                 "Membership in international organisations",
-                ""
+                "Voting rights in international organisations"
               ]
             }
           },
@@ -30,18 +26,18 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Asian Development Bank",
+                "",
                 "African Development Bank",
-                "UN Economic and Social Council",
+                "Asian Development Bank",
+                "Financial Stability Board",
                 "Inter-American Development Bank",
                 "International Bank for Reconstruction and Development",
                 "International Finance Corporation",
                 "International Monetary Fund",
+                "UN Economic and Social Council",
                 "UN General Assembly",
                 "UN Security Council",
-                "World Trade Organisation",
-                "Financial Stability Board",
-                ""
+                "World Trade Organisation"
               ]
             }
           },
@@ -50,16 +46,20 @@
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
+            "name": "Unit measure",
             "type": "string"
           },
           {
-            "name": "Unit measure",
+            "name": "Unit multiplier",
             "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

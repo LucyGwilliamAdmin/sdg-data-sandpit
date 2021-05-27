@@ -11,38 +11,27 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Tourism direct GDP growth rate (%)",
-                "Tourism direct GDP as a percentage of GDP (%)",
-                ""
-              ]
-            }
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Product",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Accommodation services for visitors",
+                "Air passenger transport services",
+                "Cultural activities",
+                "Exhibitions & Conferences etc.",
                 "Food and beverage serving activities",
+                "Other consumption products",
                 "Railway passenger transport services",
                 "Road passenger transport services",
-                "Water passenger transport services",
-                "Air passenger transport services",
+                "Sport and recreation activities",
                 "Transport equipment rental services",
                 "Travel agencies and other reservation services",
-                "Cultural activities",
-                "Sport and recreation activities",
-                "Exhibitions & Conferences etc.",
-                "Other consumption products",
-                ""
+                "Water passenger transport services"
               ]
             }
           },
@@ -55,12 +44,23 @@
             "type": "string"
           },
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Tourism direct GDP as a percentage of GDP (%)",
+                "Tourism direct GDP growth rate (%)"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

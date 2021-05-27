@@ -11,29 +11,18 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "B) State (biomass remaining, %)",
-                "A) Pressure (Stocks harvested, %)",
-                ""
-              ]
-            }
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Sustainability level (Pressure)",
             "type": "string",
             "constraints": {
               "enum": [
-                "Percentage of fish stocks harvested below FMSY",
+                "",
                 "Percentage of fish stocks harvested above FMSY",
-                "Percentage of fish stocks unknown",
-                ""
+                "Percentage of fish stocks harvested below FMSY",
+                "Percentage of fish stocks unknown"
               ]
             }
           },
@@ -42,10 +31,10 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Percentage of fish stocks above MSY Btrigger",
                 "Percentage of fish stocks below MSY Btrigger",
-                "Percentage of fish stocks unknown",
-                ""
+                "Percentage of fish stocks unknown"
               ]
             }
           },
@@ -58,12 +47,23 @@
             "type": "string"
           },
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "A) Pressure (Stocks harvested, %)",
+                "B) State (biomass remaining, %)"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

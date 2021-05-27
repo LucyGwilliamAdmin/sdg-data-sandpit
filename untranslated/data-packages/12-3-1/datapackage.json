@@ -11,62 +11,34 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Food and inedible waste (Kilotonnes)",
-                "Food and inedible waste (Kilogrammes per person)",
-                "Food (Kilotonnes)",
-                "Food (Kilogrammes per person)",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Waste type",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Household",
-                "Supply chain",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Sector",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Retail",
-                "Manufacture",
-                "Hospitality and Food Serivces",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Household Waste disposal routes",
             "type": "string",
             "constraints": {
               "enum": [
-                "LA collected residual waste",
-                "LA collected organics",
-                "LA collected other",
+                "",
                 "Disposed to sewer",
                 "Home composted",
-                ""
+                "LA collected organics",
+                "LA collected other",
+                "LA collected residual waste"
               ]
             }
           },
           {
             "name": "Observation status",
             "type": "string"
+          },
+          {
+            "name": "Sector",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Hospitality and Food Serivces",
+                "Manufacture",
+                "Retail"
+              ]
+            }
           },
           {
             "name": "Unit measure",
@@ -77,8 +49,36 @@
             "type": "string"
           },
           {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Food (Kilogrammes per person)",
+                "Food (Kilotonnes)",
+                "Food and inedible waste (Kilogrammes per person)",
+                "Food and inedible waste (Kilotonnes)"
+              ]
+            }
+          },
+          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Waste type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Household",
+                "Supply chain"
+              ]
+            }
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

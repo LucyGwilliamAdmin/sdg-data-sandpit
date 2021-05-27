@@ -11,18 +11,23 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Units",
+            "name": "Area of spending",
             "type": "string",
             "constraints": {
               "enum": [
-                "General government expenditure (GBP (£million) per capita)",
-                "Central government expenditure (GBP (£million) per capita)",
-                "Local government expenditure (GBP (£million) per capita)",
-                ""
+                "",
+                "Broadcasting and publishing services",
+                "Cultural services",
+                "Environmental protection not elsewhere classified",
+                "Pollution abatement",
+                "Protection of biodiversity and landscape",
+                "Recreation, culture and religion not elsewhere classified",
+                "Recreational and sporting services",
+                "Religious and other community services",
+                "Research and development environmental protection",
+                "Research and development recreation, culture and religion",
+                "Waste management",
+                "Waste water management"
               ]
             }
           },
@@ -31,36 +36,31 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Environmental protection",
-                "Recreation, culture and religion",
-                ""
+                "Recreation, culture and religion"
               ]
             }
           },
           {
-            "name": "Area of spending",
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "Waste management",
-                "Waste water management",
-                "Pollution abatement",
-                "Protection of biodiversity and landscape",
-                "Research and development environmental protection",
-                "Environmental protection not elsewhere classified",
-                "Recreational and sporting services",
-                "Cultural services",
-                "Broadcasting and publishing services",
-                "Religious and other community services",
-                "Research and development recreation, culture and religion",
-                "Recreation, culture and religion not elsewhere classified",
-                ""
+                "",
+                "Central government expenditure (GBP (£million) per capita)",
+                "General government expenditure (GBP (£million) per capita)",
+                "Local government expenditure (GBP (£million) per capita)"
               ]
             }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

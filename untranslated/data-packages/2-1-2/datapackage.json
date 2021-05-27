@@ -11,59 +11,18 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Male",
-                "Female",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "16 to 24",
                 "25 to 34",
                 "35 to 44",
                 "45 to 54",
                 "55 to 64",
                 "65 to 74",
-                "75 and over",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Country",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "England",
-                "Wales",
-                "Northern Ireland",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Household size",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "1",
-                "2",
-                "3",
-                "4",
-                "5 or more",
-                ""
+                "75 and over"
               ]
             }
           },
@@ -72,9 +31,9 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Yes",
+                "",
                 "No",
-                ""
+                "Yes"
               ]
             }
           },
@@ -83,35 +42,21 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Yes",
+                "",
                 "No",
-                ""
+                "Yes"
               ]
             }
           },
           {
-            "name": "Working Status",
+            "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
-                "In work",
-                "Retired",
-                "Unemployed",
-                "Other",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Household income",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "£10,399 or less",
-                "£10,400 to £25,999",
-                "£26,000 to £51,999",
-                "£52,000 or more",
-                ""
+                "",
+                "England",
+                "Northern Ireland",
+                "Wales"
               ]
             }
           },
@@ -120,9 +65,40 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Low or very low food security",
-                "Very low food security",
-                ""
+                "Very low food security"
+              ]
+            }
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Household income",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "£10,399 or less",
+                "£10,400 to £25,999",
+                "£26,000 to £51,999",
+                "£52,000 or more"
+              ]
+            }
+          },
+          {
+            "name": "Household size",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5 or more"
               ]
             }
           },
@@ -131,20 +107,44 @@
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
-            "type": "string"
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Female",
+                "Male"
+              ]
+            }
           },
           {
             "name": "Unit measure",
             "type": "string"
           },
           {
-            "name": "GeoCode",
+            "name": "Unit multiplier",
             "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Working Status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "In work",
+                "Other",
+                "Retired",
+                "Unemployed"
+              ]
+            }
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

@@ -11,17 +11,13 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
             "name": "Banking service",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Automated teller machines (ATMs)",
-                "Commerical bank branches and building societies",
-                ""
+                "Commerical bank branches and building societies"
               ]
             }
           },
@@ -30,37 +26,24 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Scotland",
+                "",
                 "England",
                 "Northern Ireland",
-                "Wales",
-                ""
+                "Scotland",
+                "Wales"
               ]
             }
           },
           {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "South East",
-                "North West",
-                "East Midlands",
-                "East of England",
-                "London",
-                "Yorkshire and the Humber",
-                "South West",
-                "West Midlands",
-                "North East",
-                ""
-              ]
-            }
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Local Authority",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Aberdeen City",
                 "Aberdeenshire",
                 "Adur",
@@ -442,19 +425,7 @@
                 "Wycombe",
                 "Wyre",
                 "Wyre Forest",
-                "York",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Urban or rural",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Rural",
-                "Urban",
-                ""
+                "York"
               ]
             }
           },
@@ -463,20 +434,49 @@
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
-            "type": "string"
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "East Midlands",
+                "East of England",
+                "London",
+                "North East",
+                "North West",
+                "South East",
+                "South West",
+                "West Midlands",
+                "Yorkshire and the Humber"
+              ]
+            }
           },
           {
             "name": "Unit measure",
             "type": "string"
           },
           {
-            "name": "GeoCode",
+            "name": "Unit multiplier",
             "type": "string"
+          },
+          {
+            "name": "Urban or rural",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Rural",
+                "Urban"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

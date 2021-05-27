@@ -11,71 +11,33 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Cause of death",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Exposure to excessive natural cold",
+                "Exposure to excessive natural heat",
+                "Exposure to other and unspecified forces of nature",
+                "Exposure to sunlight",
+                "Victim of avalanche, landslide and other earth movements",
+                "Victim of cataclysmic storm",
+                "Victim of earthquake",
+                "Victim of flood",
+                "Victim of lightning",
+                "Victim of volcanic eruption"
+              ]
+            }
           },
           {
             "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
-                "England and Wales",
+                "",
                 "England",
-                "Wales",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Male",
-                "Female",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Cause of death",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Exposure to excessive natural heat",
-                "Exposure to excessive natural cold",
-                "Exposure to sunlight",
-                "Victim of lightning",
-                "Victim of earthquake",
-                "Victim of volcanic eruption",
-                "Victim of avalanche, landslide and other earth movements",
-                "Victim of cataclysmic storm",
-                "Victim of flood",
-                "Exposure to other and unspecified forces of nature",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Unit multiplier",
-            "type": "string"
-          },
-          {
-            "name": "Unit measure",
-            "type": "string"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Rate per 100,000 population",
-                "Deaths",
-                ""
+                "England and Wales",
+                "Wales"
               ]
             }
           },
@@ -84,8 +46,46 @@
             "type": "string"
           },
           {
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Female",
+                "Male"
+              ]
+            }
+          },
+          {
+            "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Deaths",
+                "Rate per 100,000 population"
+              ]
+            }
+          },
+          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

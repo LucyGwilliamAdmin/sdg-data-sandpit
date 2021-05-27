@@ -11,63 +11,27 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "string"
-          },
-          {
-            "name": "Units",
+            "name": "Ethnic group",
             "type": "string",
             "constraints": {
               "enum": [
-                "Attainment at age 7",
-                "Attainment at age 11",
-                "Attainment at age 16",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Subject",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Reading",
-                "Maths",
-                "English",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Male",
-                "Female",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Special educational needs",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Special educational needs",
-                "No special educational needs",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Free school meals",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Free school meals",
-                "No free school meals",
-                ""
+                "",
+                "Any other Asian background",
+                "Any other black background",
+                "Any other mixed background",
+                "Any other white background",
+                "Bangladeshi",
+                "Black African",
+                "Black Caribbean",
+                "Gypsy / Roma",
+                "Indian",
+                "Irish",
+                "Pakistani",
+                "Traveller of Irish heritage",
+                "White British",
+                "White and Asian",
+                "White and black African",
+                "White and black Caribbean"
               ]
             }
           },
@@ -76,220 +40,248 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "White",
-                "Mixed",
+                "",
                 "Asian",
                 "Black",
                 "Chinese",
+                "Mixed",
                 "Other",
                 "Unclassified",
-                ""
+                "White"
               ]
             }
           },
           {
-            "name": "Ethnic group",
+            "name": "Free school meals",
             "type": "string",
             "constraints": {
               "enum": [
-                "White British",
-                "Irish",
-                "Traveller of Irish heritage",
-                "Gypsy / Roma",
-                "Any other white background",
-                "White and black Caribbean",
-                "White and black African",
-                "White and Asian",
-                "Any other mixed background",
-                "Indian",
-                "Pakistani",
-                "Bangladeshi",
-                "Any other Asian background",
-                "Black Caribbean",
-                "Black African",
-                "Any other black background",
-                ""
+                "",
+                "Free school meals",
+                "No free school meals"
               ]
             }
           },
           {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "North East",
-                "North West",
-                "Yorkshire and the Humber",
-                "East Midlands",
-                "West Midlands",
-                "East of England",
-                "London",
-                "Inner London",
-                "Outer London",
-                "South East",
-                "South West",
-                ""
-              ]
-            }
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Local Authority",
             "type": "string",
             "constraints": {
               "enum": [
-                "County Durham",
-                "Darlington",
-                "Gateshead",
-                "Hartlepool",
-                "Middlesbrough",
-                "Newcastle upon Tyne",
-                "North Tyneside",
-                "Northumberland",
-                "Redcar and Cleveland",
-                "South Tyneside",
-                "Stockton-on-Tees",
-                "Sunderland",
+                "",
+                "Barking and Dagenham",
+                "Barnet",
+                "Barnsley",
+                "Bath and North East Somerset",
+                "Bedford",
+                "Bexley",
+                "Birmingham",
                 "Blackburn with Darwen",
                 "Blackpool",
                 "Bolton",
+                "Bournemouth",
+                "Bournemouth, Christchurch and Poole",
+                "Bracknell Forest",
+                "Bradford",
+                "Brent",
+                "Brighton and Hove",
+                "Bristol, City of",
+                "Bromley",
+                "Buckinghamshire",
                 "Bury",
+                "Calderdale",
+                "Cambridgeshire",
+                "Camden",
+                "Central Bedfordshire",
                 "Cheshire East",
                 "Cheshire West and Chester",
+                "City of London7",
+                "Cornwall",
+                "County Durham",
+                "Coventry",
+                "Croydon",
                 "Cumbria",
-                "Halton",
-                "Knowsley",
-                "Lancashire",
-                "Liverpool",
-                "Manchester",
-                "Oldham",
-                "Rochdale",
-                "Salford",
-                "Sefton",
-                "St. Helens",
-                "Stockport",
-                "Tameside",
-                "Trafford",
-                "Warrington",
-                "Wigan",
-                "Wirral",
-                "Barnsley",
-                "Bradford",
-                "Calderdale",
-                "Doncaster",
-                "East Riding of Yorkshire",
-                "Kingston upon Hull, City of",
-                "Kirklees",
-                "Leeds",
-                "North East Lincolnshire",
-                "North Lincolnshire",
-                "North Yorkshire",
-                "Rotherham",
-                "Sheffield",
-                "Wakefield",
-                "York",
+                "Darlington",
                 "Derby",
                 "Derbyshire",
-                "Leicester",
-                "Leicestershire",
-                "Lincolnshire",
-                "Northamptonshire",
-                "Nottingham",
-                "Nottinghamshire",
-                "Rutland",
-                "Birmingham",
-                "Coventry",
+                "Devon",
+                "Doncaster",
+                "Dorset",
                 "Dudley",
-                "Herefordshire, County of",
-                "Sandwell",
-                "Shropshire",
-                "Solihull",
-                "Staffordshire",
-                "Stoke-on-Trent",
-                "Telford and Wrekin",
-                "Walsall",
-                "Warwickshire",
-                "Wolverhampton",
-                "Worcestershire",
-                "Bedford",
-                "Cambridgeshire",
-                "Central Bedfordshire",
-                "Essex",
-                "Hertfordshire",
-                "Luton",
-                "Norfolk",
-                "Peterborough",
-                "Southend-on-Sea",
-                "Suffolk",
-                "Thurrock",
-                "Camden",
-                "Hackney",
-                "Hammersmith and Fulham",
-                "Haringey",
-                "Islington",
-                "Kensington and Chelsea",
-                "Lambeth",
-                "Lewisham",
-                "Newham",
-                "Southwark",
-                "Tower Hamlets",
-                "Wandsworth",
-                "Westminster",
-                "Barking and Dagenham",
-                "Barnet",
-                "Bexley",
-                "Brent",
-                "Bromley",
-                "Croydon",
                 "Ealing",
+                "East Riding of Yorkshire",
+                "East Sussex",
                 "Enfield",
+                "Essex",
+                "Gateshead",
+                "Gloucestershire",
                 "Greenwich",
+                "Hackney",
+                "Halton",
+                "Hammersmith and Fulham",
+                "Hampshire",
+                "Haringey",
                 "Harrow",
+                "Hartlepool",
                 "Havering",
+                "Herefordshire, County of",
+                "Hertfordshire",
                 "Hillingdon",
                 "Hounslow",
-                "Kingston upon Thames",
-                "Merton",
-                "Redbridge",
-                "Richmond upon Thames",
-                "Sutton",
-                "Waltham Forest",
-                "Bracknell Forest",
-                "Brighton and Hove",
-                "Buckinghamshire",
-                "East Sussex",
-                "Hampshire",
                 "Isle of Wight",
+                "Isles of Scilly7",
+                "Islington",
+                "Kensington and Chelsea",
                 "Kent",
+                "Kingston upon Hull, City of",
+                "Kingston upon Thames",
+                "Kirklees",
+                "Knowsley",
+                "Lambeth",
+                "Lancashire",
+                "Leeds",
+                "Leicester",
+                "Leicestershire",
+                "Lewisham",
+                "Lincolnshire",
+                "Liverpool",
+                "Luton",
+                "Manchester",
                 "Medway",
+                "Merton",
+                "Middlesbrough",
                 "Milton Keynes",
+                "Newcastle upon Tyne",
+                "Newham",
+                "Norfolk",
+                "North East Lincolnshire",
+                "North Lincolnshire",
+                "North Somerset",
+                "North Tyneside",
+                "North Yorkshire",
+                "Northamptonshire",
+                "Northumberland",
+                "Nottingham",
+                "Nottinghamshire",
+                "Oldham",
                 "Oxfordshire",
+                "Peterborough",
+                "Plymouth",
                 "Portsmouth",
                 "Reading",
+                "Redbridge",
+                "Redcar and Cleveland",
+                "Richmond upon Thames",
+                "Rochdale",
+                "Rotherham",
+                "Rutland",
+                "Salford",
+                "Sandwell",
+                "Sefton",
+                "Sheffield",
+                "Shropshire",
                 "Slough",
-                "Southampton",
-                "Surrey",
-                "West Berkshire",
-                "West Sussex",
-                "Windsor and Maidenhead",
-                "Wokingham",
-                "Bath and North East Somerset",
-                "Bournemouth, Christchurch and Poole",
-                "Bristol, City of",
-                "Cornwall",
-                "Devon",
-                "Dorset",
-                "Gloucestershire",
-                "North Somerset",
-                "Plymouth",
+                "Solihull",
                 "Somerset",
                 "South Gloucestershire",
+                "South Tyneside",
+                "Southampton",
+                "Southend-on-Sea",
+                "Southwark",
+                "St. Helens",
+                "Staffordshire",
+                "Stockport",
+                "Stockton-on-Tees",
+                "Stoke-on-Trent",
+                "Suffolk",
+                "Sunderland",
+                "Surrey",
+                "Sutton",
                 "Swindon",
+                "Tameside",
+                "Telford and Wrekin",
+                "Thurrock",
                 "Torbay",
+                "Tower Hamlets",
+                "Trafford",
+                "Wakefield",
+                "Walsall",
+                "Waltham Forest",
+                "Wandsworth",
+                "Warrington",
+                "Warwickshire",
+                "West Berkshire",
+                "West Sussex",
+                "Westminster",
+                "Wigan",
                 "Wiltshire",
-                "City of London7",
-                "Bournemouth",
-                "Isles of Scilly7",
-                ""
+                "Windsor and Maidenhead",
+                "Wirral",
+                "Wokingham",
+                "Wolverhampton",
+                "Worcestershire",
+                "York"
+              ]
+            }
+          },
+          {
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "East Midlands",
+                "East of England",
+                "Inner London",
+                "London",
+                "North East",
+                "North West",
+                "Outer London",
+                "South East",
+                "South West",
+                "West Midlands",
+                "Yorkshire and the Humber"
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Female",
+                "Male"
+              ]
+            }
+          },
+          {
+            "name": "Special educational needs",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "No special educational needs",
+                "Special educational needs"
+              ]
+            }
+          },
+          {
+            "name": "Subject",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "English",
+                "Maths",
+                "Reading"
               ]
             }
           },
@@ -302,16 +294,24 @@
             "type": "string"
           },
           {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Attainment at age 11",
+                "Attainment at age 16",
+                "Attainment at age 7"
+              ]
+            }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "string"
           }
         ]
       }

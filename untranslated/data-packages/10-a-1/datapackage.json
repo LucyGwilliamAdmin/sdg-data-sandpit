@@ -11,18 +11,14 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
             "name": "Country Group",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Developing countries",
                 "Least developed countries",
-                "Small island developing states",
-                ""
+                "Small island developing states"
               ]
             }
           },
@@ -31,17 +27,21 @@
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "AGRI",
                 "FISH",
                 "NAMA",
-                "PAPS",
-                ""
+                "PAPS"
               ]
             }
           },
           {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

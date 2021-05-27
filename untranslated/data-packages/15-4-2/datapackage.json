@@ -11,32 +11,14 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
             "name": "Description",
             "type": "string",
             "constraints": {
               "enum": [
-                "Mountain Green Cover Index",
-                ""
+                "",
+                "Mountain Green Cover Index"
               ]
             }
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Index",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Unit multiplier",
-            "type": "string"
           },
           {
             "name": "Observation status",
@@ -47,8 +29,26 @@
             "type": "string"
           },
           {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Index"
+              ]
+            }
+          },
+          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

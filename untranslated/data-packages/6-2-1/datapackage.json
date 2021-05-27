@@ -11,34 +11,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Treatment connection",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Independent",
-                "Public sewage",
-                ""
+                "Public sewage"
               ]
             }
           },
           {
-            "name": "Water treatment category",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Tertiary",
-                "Secondary",
-                "Primary",
-                ""
-              ]
-            }
-          },
-          {
-            "name": "Observation status",
+            "name": "Unit measure",
             "type": "string"
           },
           {
@@ -46,12 +34,24 @@
             "type": "string"
           },
           {
-            "name": "Unit measure",
-            "type": "string"
-          },
-          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Water treatment category",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Primary",
+                "Secondary",
+                "Tertiary"
+              ]
+            }
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

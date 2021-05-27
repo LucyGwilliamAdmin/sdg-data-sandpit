@@ -11,22 +11,22 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Occupation unit group",
             "type": "string",
             "constraints": {
               "enum": [
+                "",
                 "Managers and proprietors in agriculture and horticulture",
-                "Managers and proprietors in forestry fishing and related services",
-                ""
+                "Managers and proprietors in forestry fishing and related services"
               ]
             }
           },
           {
-            "name": "Observation status",
+            "name": "Unit measure",
             "type": "string"
           },
           {
@@ -34,12 +34,12 @@
             "type": "string"
           },
           {
-            "name": "Unit measure",
-            "type": "string"
-          },
-          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }

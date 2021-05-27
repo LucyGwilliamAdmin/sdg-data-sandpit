@@ -11,29 +11,14 @@
       "schema": {
         "fields": [
           {
-            "name": "Year",
-            "type": "integer"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "Percentage (%) of national budget",
-                "Percentage (%) of gross domestic product (GDP)",
-                ""
-              ]
-            }
-          },
-          {
             "name": "Area of spending category",
             "type": "string",
             "constraints": {
               "enum": [
-                "Health",
+                "",
                 "Education",
-                "Social protection",
-                ""
+                "Health",
+                "Social protection"
               ]
             }
           },
@@ -42,30 +27,30 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "Medical products, appliances and equipment",
-                "Outpatient services",
-                "Hospital services",
-                "Public health services",
-                "Research and development - health",
-                "Health - not elsewhere classified",
-                "Pre-primary and primary education",
-                "Secondary education",
-                "Post-secondary non-tertiary education",
-                "Tertiary education",
-                "Education not definable by level",
-                "Subsidiary services to education",
-                "Research and development - education",
+                "",
                 "Education - not elsewhere classified",
-                "Sickness and disability",
-                "Old age",
-                "Survivors",
+                "Education not definable by level",
                 "Family and children",
-                "Unemployment",
+                "Health - not elsewhere classified",
+                "Hospital services",
                 "Housing",
-                "Social exclusion - not elsewhere classified",
+                "Medical products, appliances and equipment",
+                "Old age",
+                "Outpatient services",
+                "Post-secondary non-tertiary education",
+                "Pre-primary and primary education",
+                "Public health services",
+                "Research and development - education",
+                "Research and development - health",
                 "Research and development - social protection",
+                "Secondary education",
+                "Sickness and disability",
+                "Social exclusion - not elsewhere classified",
                 "Social protection - not elsewhere classified",
-                ""
+                "Subsidiary services to education",
+                "Survivors",
+                "Tertiary education",
+                "Unemployment"
               ]
             }
           },
@@ -74,16 +59,31 @@
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
-            "type": "string"
-          },
-          {
             "name": "Unit measure",
             "type": "string"
           },
           {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Percentage (%) of gross domestic product (GDP)",
+                "Percentage (%) of national budget"
+              ]
+            }
+          },
+          {
             "name": "Value",
             "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
           }
         ]
       }
