@@ -23,6 +23,7 @@ source_active_5: false
 source_active_6: false
 indicator_sort_order: 05-aa-02
 other_info: Data follows the UN specification for this indicator. This indicator has been identified in collaboration with topic experts.
+standalone: true
 ---
 **Non-statistical indicator**
 
