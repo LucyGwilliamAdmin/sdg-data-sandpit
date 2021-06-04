@@ -8808,6 +8808,20 @@
             "type": "string"
           },
           {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "1) Woodland area net change",
+                "2) Above-ground biomass stock",
+                "3) Percentage of woodland within protected areas",
+                "4) Percentage of woodland under long-term management plan",
+                "5) Woodland area under certification scheme"
+              ]
+            }
+          },
+          {
             "name": "Unit measure",
             "type": "string"
           },
@@ -8821,13 +8835,10 @@
             "constraints": {
               "enum": [
                 "",
-                "1) Woodland area net change (Area, 000s hectares)",
-                "1) Woodland area net change (Growth rate, %)",
-                "2) Above-ground biomass stock (Tonnes per hectare)",
-                "3) Percentage of woodland within protected areas (%)",
-                "4) Percentage of woodland under long-term management plan (%)",
-                "5) Woodland area under certification scheme (%)",
-                "5) Woodland area under certification scheme (000s hectares)"
+                "Area (000s hectares)",
+                "Growth rate (%)",
+                "Percentage (%)",
+                "Tonnes per hectare"
               ]
             }
           },
@@ -10084,28 +10095,16 @@
       "schema": {
         "fields": [
           {
-            "name": "Aid description (CRS code)",
+            "name": "Country income classification",
             "type": "string",
             "constraints": {
               "enum": [
                 "",
-                "Forestry development (31220)",
-                "Forestry education/training (31281)",
-                "Forestry policy and administrative management (31210)",
-                "Forestry research (31282)",
-                "Forestry services (31291)",
-                "Fuelwood/charcoal (31261)"
-              ]
-            }
-          },
-          {
-            "name": "Flow of Official Development Assistance (ODA)",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Bilateral",
-                "Multilateral"
+                "LDCs",
+                "LMICs",
+                "Other LICs",
+                "UMICs",
+                "Undefined"
               ]
             }
           },
@@ -10114,12 +10113,37 @@
             "type": "string"
           },
           {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "(a) ODA for biodiversity",
+                "(b) Tax revenue from biodiversity-relevant taxes",
+                "(b) Tax revenue from biodiversity-relevant taxes out of total tax revenue"
+              ]
+            }
+          },
+          {
             "name": "Unit measure",
             "type": "string"
           },
           {
             "name": "Unit multiplier",
             "type": "string"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "GBP (£ Millions)",
+                "Percent of GDP (%)",
+                "Percentage (%)",
+                "USD ($ Millions)"
+              ]
+            }
           },
           {
             "name": "Value",
@@ -11851,6 +11875,19 @@
             "type": "string"
           },
           {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Proportion of E.coli bloodstream infections resistant to antibiotics",
+                "Proportion of S. aureaus bloodstream infections resistant to antibiotics",
+                "Rate of E. coli bloodstream infection",
+                "Rate of MRSA bloodstream infection"
+              ]
+            }
+          },
+          {
             "name": "Unit measure",
             "type": "string"
           },
@@ -11864,8 +11901,8 @@
             "constraints": {
               "enum": [
                 "",
-                "MRSA bloodstream infection",
-                "Proportion (%) of 3rd generation cephalosporin resistant E. coli blood specimens"
+                "Percentage (%)",
+                "Rate per 100,000 population"
               ]
             }
           },
@@ -17019,7 +17056,8 @@
             "constraints": {
               "enum": [
                 "",
-                "Least developed countries"
+                "Least developed countries (Bilateral and imputed Multilateral)",
+                "Least developed countries (Bilateral only)"
               ]
             }
           },
@@ -17178,6 +17216,50 @@
         ]
       },
       "title": "global_indicators.2-3-1-title"
+    },
+    {
+      "path": "1-a-1/data.csv",
+      "name": "1-a-1",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "Poverty reduction aid type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Basic education",
+                "Basic health",
+                "Basic social services",
+                "Development food aid",
+                "Water supply and sanitation"
+              ]
+            }
+          },
+          {
+            "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
+          },
+          {
+            "name": "Year",
+            "type": "integer"
+          }
+        ]
+      },
+      "title": "global_indicators.1-a-1-title"
     },
     {
       "path": "1-a-2/data.csv",
@@ -19313,28 +19395,6 @@
         ]
       },
       "title": "global_indicators.10-7-4-title"
-    },
-    {
-      "path": "1-a-1/data.csv",
-      "name": "1-a-1",
-      "profile": "tabular-data-resource",
-      "scheme": "file",
-      "format": "csv",
-      "hashing": "md5",
-      "encoding": "utf-8",
-      "schema": {
-        "fields": [
-          {
-            "name": "Value",
-            "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "number"
-          }
-        ]
-      },
-      "title": "global_indicators.1-a-1-title"
     },
     {
       "path": "12-a-1/data.csv",

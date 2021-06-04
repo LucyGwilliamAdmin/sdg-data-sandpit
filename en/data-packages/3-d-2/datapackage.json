@@ -34,6 +34,20 @@
             "title": "Observation status"
           },
           {
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Proportion of E.coli bloodstream infections resistant to antibiotics",
+                "Proportion of S. aureaus bloodstream infections resistant to antibiotics",
+                "Rate of E. coli bloodstream infection",
+                "Rate of MRSA bloodstream infection"
+              ]
+            },
+            "title": "Series"
+          },
+          {
             "name": "Unit measure",
             "type": "string",
             "title": "Unit measure"
@@ -49,8 +63,8 @@
             "constraints": {
               "enum": [
                 "",
-                "MRSA bloodstream infection",
-                "Proportion (%) of 3rd generation cephalosporin resistant E. coli blood specimens"
+                "Percentage (%)",
+                "Rate per 100,000 population"
               ]
             },
             "title": "Units"

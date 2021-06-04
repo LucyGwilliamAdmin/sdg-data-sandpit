@@ -11,13 +11,38 @@
       "schema": {
         "fields": [
           {
+            "name": "Observation status",
+            "type": "string",
+            "title": "Observation status"
+          },
+          {
+            "name": "Poverty reduction aid type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "",
+                "Basic education",
+                "Basic health",
+                "Basic social services",
+                "Development food aid",
+                "Water supply and sanitation"
+              ]
+            },
+            "title": "Poverty reduction aid type"
+          },
+          {
+            "name": "Unit measure",
+            "type": "string",
+            "title": "Unit measure"
+          },
+          {
             "name": "Value",
             "type": "number",
             "title": "Value"
           },
           {
             "name": "Year",
-            "type": "number",
+            "type": "integer",
             "title": "Year"
           }
         ]
