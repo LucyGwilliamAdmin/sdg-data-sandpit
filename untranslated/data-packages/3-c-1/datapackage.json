@@ -11,19 +11,30 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            }
           },
           {
             "name": "Occupation minor group",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Health associate professionals",
                 "Health professionals",
+                "Therapy professionals",
                 "Nursing and midwifery professionals",
-                "Therapy professionals"
+                "Health associate professionals",
+                ""
               ]
             }
           },
@@ -32,42 +43,35 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Dental practitioners",
-                "Dispensing opticians",
-                "Health associate professionals not elsewhere classified",
-                "Health professionals not elsewhere classifed",
-                "Medical and dental technicians",
                 "Medical practitioners",
-                "Medical radiographers",
-                "Midwives",
-                "Nurses",
-                "Occupational therapists",
+                "Psychologists",
+                "Pharmacists",
                 "Ophthalmic opticians",
+                "Dental practitioners",
+                "Medical radiographers",
+                "Podiatrists",
+                "Health professionals not elsewhere classifed",
+                "Physiotherapists",
+                "Occupational therapists",
+                "Speech and language therapists",
+                "Therapy professionals not elsewhere classifed",
+                "Nurses",
+                "Midwives",
                 "Paramedics",
                 "Pharmaceutical technicians",
-                "Pharmacists",
-                "Physiotherapists",
-                "Podiatrists",
-                "Psychologists",
-                "Speech and language therapists",
-                "Therapy professionals not elsewhere classifed"
-              ]
-            }
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Female",
-                "Male"
+                "Medical and dental technicians",
+                "Health associate professionals not elsewhere classified",
+                "Dispensing opticians",
+                ""
               ]
             }
           },
           {
             "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -77,10 +81,6 @@
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

@@ -11,7 +11,7 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
+            "name": "Year",
             "type": "string"
           },
           {
@@ -19,10 +19,10 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Lower secondary education",
                 "Primary education",
-                "Upper secondary education"
+                "Lower secondary education",
+                "Upper secondary education",
+                ""
               ]
             }
           },
@@ -31,9 +31,9 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Boys",
-                "Girls"
+                "Girls",
+                ""
               ]
             }
           },
@@ -46,12 +46,12 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Observation status",
+            "type": "string"
           },
           {
-            "name": "Year",
-            "type": "string"
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

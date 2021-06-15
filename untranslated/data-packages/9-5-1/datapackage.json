@@ -11,77 +11,30 @@
       "schema": {
         "fields": [
           {
-            "name": "Country",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "England",
-                "Northern Ireland",
-                "Scotland",
-                "Wales"
-              ]
-            }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Performing/Funding",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Performing research and development",
                 "Funding research and development",
-                "Performing research and development"
+                ""
               ]
             }
           },
           {
-            "name": "Product group",
+            "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Aerospace",
-                "Agriculture, hunting and forestry; Fishing",
-                "Casting of iron and steel",
-                "Chemicals and chemical products",
-                "Computer programming and information service activities",
-                "Computers and peripheral equipment",
-                "Construction",
-                "Consumer electronics and communication equipment",
-                "Electrical equipment",
-                "Electricity, gas and water supply",
-                "Extractive Industries",
-                "Fabricated metal products except machinery and equipment",
-                "Food products and beverages; Tobacco products",
-                "Machinery and equipment",
-                "Miscellaneous business activities; Technical testing and analysis",
-                "Motor vehicles and parts",
-                "Non-ferrous metals",
-                "Other manufactured goods",
-                "Other non-metallic mineral products",
-                "Other transport equipment",
-                "Pharmaceuticals",
-                "Precision instruments and optical products; Photographic equipment",
-                "Public administration",
-                "Pulp, paper and paper products; Printing; Wood and straw products",
-                "Refined petroleum products and coke oven products",
-                "Research and development services",
-                "Rubber and plastic products",
-                "Sewerage, waste management, remediation activities",
-                "Shipbuilding",
-                "Software development",
-                "Telecommunications",
-                "Textiles, clothing and leather products",
-                "Transport and storage, incl. postal and courier activities",
-                "Wholesale and retail trade"
+                "England",
+                "Northern Ireland",
+                "Wales",
+                "Scotland",
+                ""
               ]
             }
           },
@@ -90,16 +43,16 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "East Midlands",
-                "East of England",
-                "London",
                 "North East",
-                "North West",
-                "South East",
-                "South West",
                 "West Midlands",
-                "Yorkshire and the Humber"
+                "Yorkshire and the Humber",
+                "East Midlands",
+                "North West",
+                "South West",
+                "London",
+                "East of England",
+                "South East",
+                ""
               ]
             }
           },
@@ -108,14 +61,14 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Business enterprise",
                 "Government",
                 "Higher education",
+                "Private non-profit",
+                "Research councils",
                 "Higher education funding councils",
                 "Overseas",
-                "Private non-profit",
-                "Research councils"
+                ""
               ]
             }
           },
@@ -124,12 +77,12 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Other",
-                "Other UK Business",
                 "Overseas",
+                "UK Government",
+                "Other UK Business",
                 "Own funds",
-                "UK Government"
+                ""
               ]
             }
           },
@@ -138,9 +91,52 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "European Commission grants",
-                "Other Overseas"
+                "Other Overseas",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Product group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Sewerage, waste management, remediation activities",
+                "Non-ferrous metals",
+                "Transport and storage, incl. postal and courier activities",
+                "Textiles, clothing and leather products",
+                "Construction",
+                "Electricity, gas and water supply",
+                "Other manufactured goods",
+                "Other transport equipment",
+                "Casting of iron and steel",
+                "Other non-metallic mineral products",
+                "Public administration",
+                "Pulp, paper and paper products; Printing; Wood and straw products",
+                "Extractive Industries",
+                "Computers and peripheral equipment",
+                "Fabricated metal products except machinery and equipment",
+                "Wholesale and retail trade",
+                "Agriculture, hunting and forestry; Fishing",
+                "Rubber and plastic products",
+                "Research and development services",
+                "Shipbuilding",
+                "Refined petroleum products and coke oven products",
+                "Food products and beverages; Tobacco products",
+                "Miscellaneous business activities; Technical testing and analysis",
+                "Electrical equipment",
+                "Precision instruments and optical products; Photographic equipment",
+                "Chemicals and chemical products",
+                "Consumer electronics and communication equipment",
+                "Motor vehicles and parts",
+                "Machinery and equipment",
+                "Telecommunications",
+                "Computer programming and information service activities",
+                "Aerospace",
+                "Pharmaceuticals",
+                "Software development",
+                ""
               ]
             }
           },
@@ -149,16 +145,20 @@
             "type": "string"
           },
           {
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
             "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "GeoCode",
             "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

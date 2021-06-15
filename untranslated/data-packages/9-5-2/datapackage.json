@@ -11,29 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Age",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "16 to 24",
-                "25 to 34",
-                "35 to 44",
-                "45 to 54",
-                "55 to 64",
-                "65 and over"
-              ]
-            }
+            "name": "Year",
+            "type": "integer"
           },
           {
-            "name": "Country of birth",
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Born in European Economic Area",
-                "Born in UK",
-                "Other country of birth"
+                "Headcount (ONS data)",
+                "Full time equivalent (World Bank Data)",
+                ""
               ]
             }
           },
@@ -42,50 +30,24 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Disabled (GSS harmonised)",
-                "Non-disabled (GSS harmonised)"
+                "Non-disabled (GSS harmonised)",
+                ""
               ]
             }
           },
           {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Nationality",
+            "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "European Economic Area nationality",
-                "Other nationality",
-                "UK nationality"
-              ]
-            }
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "East Midlands",
-                "East of England",
-                "London",
-                "North East",
-                "North West",
-                "Northern Ireland",
-                "Scotland",
-                "South East",
-                "South West",
-                "Wales",
-                "West Midlands",
-                "Yorkshire and the Humber"
+                "16 to 24",
+                "25 to 34",
+                "35 to 44",
+                "45 to 54",
+                "55 to 64",
+                "65 and over",
+                ""
               ]
             }
           },
@@ -94,9 +56,54 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Male",
                 "Female",
-                "Male"
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "North East",
+                "North West",
+                "Yorkshire and the Humber",
+                "East Midlands",
+                "West Midlands",
+                "East of England",
+                "London",
+                "South East",
+                "South West",
+                "Wales",
+                "Scotland",
+                "Northern Ireland",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Country of birth",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Born in UK",
+                "Born in European Economic Area",
+                "Other country of birth",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Nationality",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "UK nationality",
+                "European Economic Area nationality",
+                "Other nationality",
+                ""
               ]
             }
           },
@@ -109,23 +116,16 @@
             "type": "string"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Full time equivalent (World Bank Data)",
-                "Headcount (ONS data)"
-              ]
-            }
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

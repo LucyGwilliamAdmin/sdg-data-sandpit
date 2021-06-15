@@ -11,27 +11,38 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Tourism direct GDP growth rate (%)",
+                "Tourism direct GDP as a percentage of GDP (%)",
+                ""
+              ]
+            }
           },
           {
             "name": "Product",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Accommodation services for visitors",
-                "Air passenger transport services",
-                "Cultural activities",
-                "Exhibitions & Conferences etc.",
                 "Food and beverage serving activities",
-                "Other consumption products",
                 "Railway passenger transport services",
                 "Road passenger transport services",
-                "Sport and recreation activities",
+                "Water passenger transport services",
+                "Air passenger transport services",
                 "Transport equipment rental services",
                 "Travel agencies and other reservation services",
-                "Water passenger transport services"
+                "Cultural activities",
+                "Sport and recreation activities",
+                "Exhibitions & Conferences etc.",
+                "Other consumption products",
+                ""
               ]
             }
           },
@@ -44,23 +55,12 @@
             "type": "string"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Tourism direct GDP as a percentage of GDP (%)",
-                "Tourism direct GDP growth rate (%)"
-              ]
-            }
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

@@ -11,6 +11,10 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "string"
+          },
+          {
             "name": "Observation status",
             "type": "string"
           },
@@ -21,10 +25,6 @@
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

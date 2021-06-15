@@ -11,23 +11,27 @@
       "schema": {
         "fields": [
           {
-            "name": "Income group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Bottom 40%"
-              ]
-            }
+            "name": "Year",
+            "type": "string"
           },
           {
             "name": "Income/expenditure",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Income",
                 "Expenditure",
-                "Income"
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Income group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Bottom 40%",
+                ""
               ]
             }
           },
@@ -36,20 +40,16 @@
             "type": "string"
           },
           {
-            "name": "Unit measure",
+            "name": "Unit multiplier",
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
+            "name": "Unit measure",
             "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

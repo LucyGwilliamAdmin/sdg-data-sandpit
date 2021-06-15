@@ -11,7 +11,7 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
+            "name": "Year",
             "type": "string"
           },
           {
@@ -19,14 +19,18 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Male",
                 "Female",
-                "Male"
+                ""
               ]
             }
           },
           {
             "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -36,10 +40,6 @@
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

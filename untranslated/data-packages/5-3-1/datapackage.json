@@ -11,22 +11,26 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
             "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "By age 18",
                 "By age 17",
-                "By age 18"
+                ""
               ]
             }
           },
           {
-            "name": "Observation status",
+            "name": "Unit measure",
             "type": "string"
           },
           {
-            "name": "Unit measure",
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -36,10 +40,6 @@
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

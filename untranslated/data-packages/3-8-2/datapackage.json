@@ -11,27 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Age",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "29 and under",
-                "30 to 49",
-                "50 to 64",
-                "65 to 74",
-                "75 and over"
-              ]
-            }
+            "name": "Year",
+            "type": "string"
           },
           {
             "name": "Health product or service",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Medical products appliances and equipment",
                 "Hospital services",
-                "Medical products appliances and equipment"
+                ""
               ]
             }
           },
@@ -40,11 +30,11 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Inpatient hospital services",
                 "Medicines prescriptions and healthcare products",
+                "Spectacles lenses accessories and repairs",
                 "Outpatient services",
-                "Spectacles lenses accessories and repairs"
+                "Inpatient hospital services",
+                ""
               ]
             }
           },
@@ -53,36 +43,16 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Accessories or repairs to spectacles or lenses",
-                "Medicines and medical goods (not NHS)",
-                "National Health Service (NHS) medical optical dental and medical auxiliary services",
                 "National Health Service (NHS) prescription charges and payments",
-                "Nonoptical appliances and equipment (wheelchairs batteries for hearing aids shoe buildup)",
+                "Medicines and medical goods (not NHS)",
                 "Other medical products (plasters condoms hot water bottles)",
-                "Other services",
+                "Nonoptical appliances and equipment (wheelchairs batteries for hearing aids shoe buildup)",
+                "Purchase of spectacles lenses prescription sunglasses",
+                "Accessories or repairs to spectacles or lenses",
+                "National Health Service (NHS) medical optical dental and medical auxiliary services",
                 "Private medical optical dental and medical auxiliary services",
-                "Purchase of spectacles lenses prescription sunglasses"
-              ]
-            }
-          },
-          {
-            "name": "Occupation category",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Higher professional",
-                "Intermediate occupations",
-                "Large employers and higher managerial",
-                "Long term unemployed",
-                "Lower managerial and professional",
-                "Lower supervisory",
-                "Occupation not stated",
-                "Routine",
-                "Semiroutine",
-                "Small employers",
-                "Students"
+                "Other services",
+                ""
               ]
             }
           },
@@ -91,10 +61,10 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Owner occupied",
+                "Social rented",
                 "Private rented",
-                "Social rented"
+                ""
               ]
             }
           },
@@ -103,24 +73,54 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Council",
                 "Owned outright",
                 "Owner occupied buying with a mortgage",
+                "Council",
                 "Registered social landlord",
                 "Rent free",
+                "Rent paid unfurnished",
                 "Rent paid furnished",
-                "Rent paid unfurnished"
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Occupation category",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Large employers and higher managerial",
+                "Higher professional",
+                "Lower managerial and professional",
+                "Intermediate occupations",
+                "Small employers",
+                "Lower supervisory",
+                "Semiroutine",
+                "Routine",
+                "Long term unemployed",
+                "Students",
+                "Occupation not stated",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "29 and under",
+                "30 to 49",
+                "50 to 64",
+                "65 to 74",
+                "75 and over",
+                ""
               ]
             }
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

@@ -11,34 +11,26 @@
       "schema": {
         "fields": [
           {
-            "name": "Deprivation decile",
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Decile 1 (least deprived)",
-                "Decile 10 (most deprived)",
-                "Decile 2",
-                "Decile 3",
-                "Decile 4",
-                "Decile 5",
-                "Decile 6",
-                "Decile 7",
-                "Decile 8",
-                "Decile 9"
+                "Estimated prevalence",
+                "Met need (%)",
+                "Number of people in treatment",
+                ""
               ]
             }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
           },
           {
             "name": "Local Authority",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Barking and Dagenham",
                 "Barnet",
                 "Barnsley",
@@ -191,37 +183,45 @@
                 "Wokingham",
                 "Wolverhampton",
                 "Worcestershire",
-                "York"
+                "York",
+                ""
               ]
             }
           },
           {
-            "name": "Unit measure",
-            "type": "string"
+            "name": "Deprivation decile",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Decile 10 (most deprived)",
+                "Decile 9",
+                "Decile 8",
+                "Decile 7",
+                "Decile 6",
+                "Decile 5",
+                "Decile 4",
+                "Decile 3",
+                "Decile 2",
+                "Decile 1 (least deprived)",
+                ""
+              ]
+            }
           },
           {
             "name": "Unit multiplier",
             "type": "string"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Estimated prevalence",
-                "Met need (%)",
-                "Number of people in treatment"
-              ]
-            }
+            "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

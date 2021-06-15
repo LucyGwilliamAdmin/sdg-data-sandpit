@@ -11,11 +11,55 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "England and Wales",
+                "England",
+                "Wales",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "North East",
+                "North West",
+                "Yorkshire and the Humber",
+                "East Midlands",
+                "West Midlands",
+                "East of England",
+                "London",
+                "South East",
+                "South West",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "10 to 14",
                 "15 to 19",
                 "20 to 24",
@@ -32,56 +76,8 @@
                 "75 to 79",
                 "80 to 84",
                 "85 to 89",
-                "90 and over"
-              ]
-            }
-          },
-          {
-            "name": "Country",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "England",
-                "England and Wales",
-                "Wales"
-              ]
-            }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "East Midlands",
-                "East of England",
-                "London",
-                "North East",
-                "North West",
-                "South East",
-                "South West",
-                "West Midlands",
-                "Yorkshire and the Humber"
-              ]
-            }
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Female",
-                "Male"
+                "90 and over",
+                ""
               ]
             }
           },
@@ -90,18 +86,18 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "X40 Accidental poisoning by and exposure to nonopioid analgesics, antipyretics and antirheumatics",
                 "X43 Accidental poisoning by and exposure to other drugs acting on the autonomic nervous system",
                 "X44 Accidental poisoning by and exposure to other and unspecified drugs, medicaments and biological substances",
                 "X46 Accidental poisoning by and exposure to organic solvents and halogenated hydrocarbons and their vapours",
                 "X47 Accidental poisoning by and exposure to other gases and vapours",
-                "X49 Accidental poisoning by and exposure to other and unspecified chemicals and noxious substances"
+                "X49 Accidental poisoning by and exposure to other and unspecified chemicals and noxious substances",
+                ""
               ]
             }
           },
           {
-            "name": "Unit measure",
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -109,12 +105,16 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Unit measure",
+            "type": "string"
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

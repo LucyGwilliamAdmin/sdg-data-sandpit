@@ -11,23 +11,18 @@
       "schema": {
         "fields": [
           {
-            "name": "Area of spending",
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Broadcasting and publishing services",
-                "Cultural services",
-                "Environmental protection not elsewhere classified",
-                "Pollution abatement",
-                "Protection of biodiversity and landscape",
-                "Recreation, culture and religion not elsewhere classified",
-                "Recreational and sporting services",
-                "Religious and other community services",
-                "Research and development environmental protection",
-                "Research and development recreation, culture and religion",
-                "Waste management",
-                "Waste water management"
+                "General government expenditure (GBP (£million) per capita)",
+                "Central government expenditure (GBP (£million) per capita)",
+                "Local government expenditure (GBP (£million) per capita)",
+                ""
               ]
             }
           },
@@ -36,31 +31,36 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Environmental protection",
-                "Recreation, culture and religion"
+                "Recreation, culture and religion",
+                ""
               ]
             }
           },
           {
-            "name": "Units",
+            "name": "Area of spending",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Central government expenditure (GBP (£million) per capita)",
-                "General government expenditure (GBP (£million) per capita)",
-                "Local government expenditure (GBP (£million) per capita)"
+                "Waste management",
+                "Waste water management",
+                "Pollution abatement",
+                "Protection of biodiversity and landscape",
+                "Research and development environmental protection",
+                "Environmental protection not elsewhere classified",
+                "Recreational and sporting services",
+                "Cultural services",
+                "Broadcasting and publishing services",
+                "Religious and other community services",
+                "Research and development recreation, culture and religion",
+                "Recreation, culture and religion not elsewhere classified",
+                ""
               ]
             }
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

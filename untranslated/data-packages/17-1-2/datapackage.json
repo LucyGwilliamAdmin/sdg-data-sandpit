@@ -11,17 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Type of government",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Central government",
-                "Local government"
+                "Local government",
+                ""
               ]
             }
           },
@@ -34,12 +34,12 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Observation status",
+            "type": "string"
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

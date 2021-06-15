@@ -11,19 +11,23 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
             "name": "Category",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Alignment across government levels",
-                "Financing for policy coherence",
                 "Institutionalization of Political Commitment",
-                "Inter-ministerial and cross-sectoral coordination",
                 "Long-term considerations in decision-making",
-                "Monitoring and reporting for policy coherence",
+                "Inter-ministerial and cross-sectoral coordination",
                 "Participatory processes",
-                "Policy linkages"
+                "Policy linkages",
+                "Alignment across government levels",
+                "Monitoring and reporting for policy coherence",
+                "Financing for policy coherence",
+                ""
               ]
             }
           },
@@ -34,10 +38,6 @@
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

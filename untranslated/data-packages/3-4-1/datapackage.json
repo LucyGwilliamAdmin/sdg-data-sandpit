@@ -11,85 +11,36 @@
       "schema": {
         "fields": [
           {
-            "name": "Age",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "30 to 34",
-                "35 to 39",
-                "40 to 44",
-                "45 to 49",
-                "50 to 54",
-                "55 to 59",
-                "60 to 64",
-                "65 to 69"
-              ]
-            }
-          },
-          {
-            "name": "Chronic respiratory disease type",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Chronic lower respiratory diseases",
-                "Lung diseases due to external agents",
-                "Other diseases of pleura",
-                "Other diseases of upper respiratory tract",
-                "Other respiratory diseases principally affecting the interstitium",
-                "Other respiratory disorders",
-                "Respiratory failure, not elsewhere classified",
-                "Suppurative and necrotic conditions of lower respiratory tract"
-              ]
-            }
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "England",
                 "England and Wales",
-                "Wales"
+                "Wales",
+                ""
               ]
             }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
           },
           {
             "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "East Midlands",
                 "East of England",
+                "East Midlands",
                 "London",
                 "North East",
                 "North West",
                 "South East",
                 "South West",
                 "West Midlands",
-                "Yorkshire and the Humber"
-              ]
-            }
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Men",
-                "Women"
+                "Yorkshire and the Humber",
+                ""
               ]
             }
           },
@@ -98,11 +49,56 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Cancer",
+                "Diabetes",
                 "Cardiovascular disease",
                 "Chronic respiratory disease",
-                "Diabetes"
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Chronic respiratory disease type",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Other diseases of upper respiratory tract",
+                "Chronic lower respiratory diseases",
+                "Lung diseases due to external agents",
+                "Other respiratory diseases principally affecting the interstitium",
+                "Suppurative and necrotic conditions of lower respiratory tract",
+                "Other diseases of pleura",
+                "Other respiratory disorders",
+                "Respiratory failure, not elsewhere classified",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Men",
+                "Women",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "30 to 34",
+                "35 to 39",
+                "40 to 44",
+                "45 to 49",
+                "50 to 54",
+                "55 to 59",
+                "60 to 64",
+                "65 to 69",
+                ""
               ]
             }
           },
@@ -115,12 +111,16 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Observation status",
+            "type": "string"
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

@@ -11,41 +11,32 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Sex",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Male",
+                "Female",
+                ""
+              ]
+            }
+          },
+          {
             "name": "Age",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "16 to 24",
                 "25 to 34",
                 "35 to 49",
                 "50 to 64",
                 "65 to 74",
-                "75 and over"
-              ]
-            }
-          },
-          {
-            "name": "Citizenship",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "EU Member State",
-                "Elsewhere in the world",
-                "Republic of Ireland",
-                "United Kingdom"
-              ]
-            }
-          },
-          {
-            "name": "Disability status",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Disabled (GSS harmonised)",
-                "Non-disabled (GSS harmonised)"
+                "75 and over",
+                ""
               ]
             }
           },
@@ -54,25 +45,73 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "White",
                 "Asian",
                 "Black",
                 "Mixed",
                 "Other",
-                "White"
+                ""
               ]
             }
           },
           {
-            "name": "GeoCode",
-            "type": "string"
+            "name": "Disability status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Disabled (GSS harmonised)",
+                "Non-disabled (GSS harmonised)",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "North East",
+                "North West",
+                "Yorkshire and The Humber",
+                "East Midlands",
+                "West Midlands",
+                "East of England",
+                "London",
+                "South East",
+                "South West",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Urban or rural",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Urban",
+                "Rural",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Citizenship",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "United Kingdom",
+                "Republic of Ireland",
+                "EU Member State",
+                "Elsewhere in the world",
+                ""
+              ]
+            }
           },
           {
             "name": "Household income",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Band A1",
                 "Band A2",
                 "Band A3",
@@ -81,6 +120,7 @@
                 "Band A6",
                 "Band A7",
                 "Band A8",
+                "No income",
                 "Band B1",
                 "Band B2",
                 "Band B3",
@@ -89,7 +129,7 @@
                 "Band B6",
                 "Band B7",
                 "Band B8",
-                "No income"
+                ""
               ]
             }
           },
@@ -98,60 +138,20 @@
             "type": "string"
           },
           {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "East Midlands",
-                "East of England",
-                "London",
-                "North East",
-                "North West",
-                "South East",
-                "South West",
-                "West Midlands",
-                "Yorkshire and The Humber"
-              ]
-            }
-          },
-          {
-            "name": "Sex",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Female",
-                "Male"
-              ]
-            }
+            "name": "Unit multiplier",
+            "type": "string"
           },
           {
             "name": "Unit measure",
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
+            "name": "GeoCode",
             "type": "string"
-          },
-          {
-            "name": "Urban or rural",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Rural",
-                "Urban"
-              ]
-            }
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

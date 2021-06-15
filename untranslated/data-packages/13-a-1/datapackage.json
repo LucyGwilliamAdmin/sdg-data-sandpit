@@ -11,22 +11,26 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Theme",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Mitigation",
                 "Adaptation",
                 "Cross-cutting",
-                "Mitigation",
                 "Other",
-                "Total"
+                "Total",
+                ""
               ]
             }
+          },
+          {
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Unit multiplier",
@@ -35,10 +39,6 @@
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

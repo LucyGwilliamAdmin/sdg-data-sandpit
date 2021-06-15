@@ -11,15 +11,24 @@
       "schema": {
         "fields": [
           {
-            "name": "GeoCode",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Size of particulate matter",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "PM 10",
+                ""
+              ]
+            }
           },
           {
             "name": "Local Authority",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Aberdeen City",
                 "Armagh",
                 "Barnstaple",
@@ -93,7 +102,8 @@
                 "Wigan",
                 "Wirral",
                 "Wrexham",
-                "York"
+                "York",
+                ""
               ]
             }
           },
@@ -102,30 +112,20 @@
             "type": "string"
           },
           {
-            "name": "Size of particulate matter",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "PM 10"
-              ]
-            }
+            "name": "Unit multiplier",
+            "type": "string"
           },
           {
             "name": "Unit measure",
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
+            "name": "GeoCode",
             "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

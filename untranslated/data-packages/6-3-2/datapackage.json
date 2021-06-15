@@ -11,34 +11,42 @@
       "schema": {
         "fields": [
           {
-            "name": "Country",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "England",
-                "Northern Ireland",
-                "Scotland",
-                "Wales"
-              ]
-            }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Status classification",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "High",
                 "Good",
-                "High"
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Water body category",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Rivers and canals",
+                "Lakes",
+                "Estuaries and Coastal",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "England",
+                "Scotland",
+                "Wales",
+                "Northern Ireland",
+                ""
               ]
             }
           },
@@ -51,24 +59,16 @@
             "type": "string"
           },
           {
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Water body category",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Estuaries and Coastal",
-                "Lakes",
-                "Rivers and canals"
-              ]
-            }
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

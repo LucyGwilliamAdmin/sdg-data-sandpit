@@ -11,31 +11,27 @@
       "schema": {
         "fields": [
           {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "East Midlands",
-                "East of England",
-                "London",
                 "North East",
                 "North West",
-                "Northern Ireland",
-                "Scotland",
+                "Yorkshire and the Humber",
+                "East Midlands",
+                "West Midlands",
+                "East of England",
+                "London",
                 "South East",
                 "South West",
                 "Wales",
-                "West Midlands",
-                "Yorkshire and the Humber"
+                "Scotland",
+                "Northern Ireland",
+                ""
               ]
             }
           },
@@ -44,14 +40,14 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Male",
                 "Female",
-                "Male"
+                ""
               ]
             }
           },
           {
-            "name": "Unit measure",
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -59,12 +55,16 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Unit measure",
+            "type": "string"
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

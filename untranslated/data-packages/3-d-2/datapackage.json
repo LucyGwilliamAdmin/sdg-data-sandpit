@@ -11,44 +11,7 @@
       "schema": {
         "fields": [
           {
-            "name": "Country",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "England",
-                "Northern Ireland",
-                "Wales"
-              ]
-            }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Series",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Proportion of E.coli bloodstream infections resistant to antibiotics",
-                "Proportion of S. aureaus bloodstream infections resistant to antibiotics",
-                "Rate of E. coli bloodstream infection",
-                "Rate of MRSA bloodstream infection"
-              ]
-            }
-          },
-          {
-            "name": "Unit measure",
-            "type": "string"
-          },
-          {
-            "name": "Unit multiplier",
+            "name": "Year",
             "type": "string"
           },
           {
@@ -56,19 +19,56 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Rate per 100,000 population",
                 "Percentage (%)",
-                "Rate per 100,000 population"
+                ""
               ]
             }
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Series",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Rate of MRSA bloodstream infection",
+                "Rate of E. coli bloodstream infection",
+                "Proportion of E.coli bloodstream infections resistant to antibiotics",
+                "Proportion of S. aureaus bloodstream infections resistant to antibiotics",
+                ""
+              ]
+            }
           },
           {
-            "name": "Year",
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "England",
+                "Wales",
+                "Northern Ireland",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Observation status",
             "type": "string"
+          },
+          {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

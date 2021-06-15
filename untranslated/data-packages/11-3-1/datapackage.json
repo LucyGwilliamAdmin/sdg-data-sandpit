@@ -11,27 +11,56 @@
       "schema": {
         "fields": [
           {
-            "name": "Country",
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "England",
-                "Scotland",
-                "Wales"
+                "1. Ratio of land consumption rate to population growth rate - UN indicator",
+                "2. Land consumption rate",
+                "3. Population growth rate",
+                ""
               ]
             }
           },
           {
-            "name": "GeoCode",
-            "type": "string"
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "England",
+                "Wales",
+                "Scotland",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "East Midlands",
+                "East of England",
+                "London",
+                "North East",
+                "North West",
+                "South East",
+                "South West",
+                "West Midlands",
+                "Yorkshire and the Humber",
+                ""
+              ]
+            }
           },
           {
             "name": "Local Authority",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Adur",
                 "Allerdale",
                 "Amber Valley",
@@ -133,7 +162,6 @@
                 "Exeter",
                 "Fareham",
                 "Fenland",
-                "Folkestone and Hythe",
                 "Forest Heath",
                 "Forest of Dean",
                 "Fylde",
@@ -263,6 +291,7 @@
                 "Selby",
                 "Sevenoaks",
                 "Sheffield",
+                "Folkestone and Hythe",
                 "Shropshire",
                 "Slough",
                 "Solihull",
@@ -357,29 +386,39 @@
                 "Wycombe",
                 "Wyre",
                 "Wyre Forest",
-                "York"
+                "York",
+                ""
               ]
             }
           },
           {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Region",
+            "name": "Welsh Unitary Authority",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "East Midlands",
-                "East of England",
-                "London",
-                "North East",
-                "North West",
-                "South East",
-                "South West",
-                "West Midlands",
-                "Yorkshire and the Humber"
+                "Blaenau Gwent",
+                "Bridgend",
+                "Caerphilly",
+                "Cardiff",
+                "Carmarthenshire",
+                "Ceredigion",
+                "Conwy",
+                "Denbighshire",
+                "Flintshire",
+                "Gwynedd",
+                "Isle of Anglesey",
+                "Merthyr Tydfil",
+                "Monmouthshire",
+                "Neath Port Talbot",
+                "Newport",
+                "Pembrokeshire",
+                "Powys",
+                "Rhondda Cynon Taf",
+                "Swansea",
+                "The Vale of Glamorgan",
+                "Torfaen",
+                "Wrexham",
+                ""
               ]
             }
           },
@@ -388,7 +427,6 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Aberdeen City",
                 "Aberdeenshire",
                 "Angus",
@@ -419,7 +457,8 @@
                 "South Lanarkshire",
                 "Stirling",
                 "West Dunbartonshire",
-                "West Lothian"
+                "West Lothian",
+                ""
               ]
             }
           },
@@ -432,55 +471,16 @@
             "type": "string"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "1. Ratio of land consumption rate to population growth rate - UN indicator",
-                "2. Land consumption rate",
-                "3. Population growth rate"
-              ]
-            }
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Welsh Unitary Authority",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Blaenau Gwent",
-                "Bridgend",
-                "Caerphilly",
-                "Cardiff",
-                "Carmarthenshire",
-                "Ceredigion",
-                "Conwy",
-                "Denbighshire",
-                "Flintshire",
-                "Gwynedd",
-                "Isle of Anglesey",
-                "Merthyr Tydfil",
-                "Monmouthshire",
-                "Neath Port Talbot",
-                "Newport",
-                "Pembrokeshire",
-                "Powys",
-                "Rhondda Cynon Taf",
-                "Swansea",
-                "The Vale of Glamorgan",
-                "Torfaen",
-                "Wrexham"
-              ]
-            }
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

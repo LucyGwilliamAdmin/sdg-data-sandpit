@@ -11,109 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Age",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "16 to 19 *",
-                "16 to 24 #",
-                "20 to 24 *",
-                "25 to 34",
-                "35 to 44",
-                "45 to 54",
-                "55 and over #",
-                "55 to 59 *",
-                "60 to 64 *",
-                "65 and over *"
-              ]
-            }
-          },
-          {
-            "name": "Country",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "England",
-                "England and Wales *",
-                "Scotland",
-                "Wales"
-              ]
-            }
-          },
-          {
-            "name": "GeoCode",
+            "name": "Year",
             "type": "string"
           },
           {
-            "name": "Industry sector",
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Accommodation and food service activities #",
-                "Activities of households as employers; undifferentiated goods-and services-producing activities of households for own use #",
-                "Administrative and support service activities #",
-                "Agriculture, forestry and fishing",
-                "Arts, entertainment and recreation #",
-                "Construction",
-                "Education #",
-                "Electricity, gas, steam and air conditioning supply #",
-                "Financial and insurance activities #",
-                "Gas, electricity and water supply; sewerage, waste and recycling *",
-                "Human health and social work activities #",
-                "Information and communication #",
-                "Manufacturing",
-                "Mining and quarrying",
-                "Other service activities #",
-                "Professional, scientific and technical activities #",
-                "Public administration and defence; compulsory social security #",
-                "Real estate activities #",
-                "Service industries *",
-                "Transportation and storage #",
-                "Water supply; sewerage, waste management and remediation activities #",
-                "Wholesale and retail trade; repair of motor vehicles and motorcycles #"
-              ]
-            }
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Occupation",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Administrative and secretarial occupations",
-                "Associate professional and technical occupations",
-                "Caring, leisure and other service occupations",
-                "Elementary occupations",
-                "Managers, directors and senior officials",
-                "Process, plant and machine operatives",
-                "Professional occupations",
-                "Sales and customer service occupations",
-                "Skilled trades occupations"
-              ]
-            }
-          },
-          {
-            "name": "Region",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "East Midlands",
-                "East of England",
-                "London",
-                "North East",
-                "North West",
-                "South East",
-                "South West",
-                "West Midlands",
-                "Yorkshire and the Humber"
+                "Fatal injury (rate per 100,000 workers)",
+                "Non-fatal injury (rate per 100,000 workers)",
+                ""
               ]
             }
           },
@@ -122,9 +30,108 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Male",
                 "Female",
-                "Male"
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "16 to 19 *",
+                "20 to 24 *",
+                "25 to 34",
+                "35 to 44",
+                "45 to 54",
+                "55 to 59 *",
+                "60 to 64 *",
+                "65 and over *",
+                "16 to 24 #",
+                "55 and over #",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Country",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "England and Wales *",
+                "England",
+                "Wales",
+                "Scotland",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Region",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "North East",
+                "North West",
+                "Yorkshire and the Humber",
+                "East Midlands",
+                "West Midlands",
+                "East of England",
+                "London",
+                "South East",
+                "South West",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Industry sector",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Agriculture, forestry and fishing",
+                "Mining and quarrying",
+                "Gas, electricity and water supply; sewerage, waste and recycling *",
+                "Manufacturing",
+                "Construction",
+                "Service industries *",
+                "Electricity, gas, steam and air conditioning supply #",
+                "Water supply; sewerage, waste management and remediation activities #",
+                "Wholesale and retail trade; repair of motor vehicles and motorcycles #",
+                "Transportation and storage #",
+                "Accommodation and food service activities #",
+                "Information and communication #",
+                "Financial and insurance activities #",
+                "Real estate activities #",
+                "Professional, scientific and technical activities #",
+                "Administrative and support service activities #",
+                "Public administration and defence; compulsory social security #",
+                "Education #",
+                "Human health and social work activities #",
+                "Arts, entertainment and recreation #",
+                "Other service activities #",
+                "Activities of households as employers; undifferentiated goods-and services-producing activities of households for own use #",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Occupation",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Managers, directors and senior officials",
+                "Professional occupations",
+                "Associate professional and technical occupations",
+                "Administrative and secretarial occupations",
+                "Skilled trades occupations",
+                "Caring, leisure and other service occupations",
+                "Sales and customer service occupations",
+                "Process, plant and machine operatives",
+                "Elementary occupations",
+                ""
               ]
             }
           },
@@ -137,23 +144,16 @@
             "type": "string"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Fatal injury (rate per 100,000 workers)",
-                "Non-fatal injury (rate per 100,000 workers)"
-              ]
-            }
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "GeoCode",
+            "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

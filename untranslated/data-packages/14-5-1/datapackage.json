@@ -11,11 +11,26 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Units",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Marine protected area extent",
+                "Proportion of marine protected area",
+                ""
+              ]
+            }
           },
           {
             "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -23,23 +38,8 @@
             "type": "string"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Marine protected area extent",
-                "Proportion of marine protected area"
-              ]
-            }
-          },
-          {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

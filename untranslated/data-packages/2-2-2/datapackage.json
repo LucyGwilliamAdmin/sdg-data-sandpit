@@ -11,27 +11,19 @@
       "schema": {
         "fields": [
           {
-            "name": "BMI",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Obese",
-                "Overweight",
-                "Underweight"
-              ]
-            }
+            "name": "Year",
+            "type": "string"
           },
           {
             "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "England",
-                "Northern Ireland",
                 "Scotland",
-                "Wales"
+                "Wales",
+                "Northern Ireland",
+                ""
               ]
             }
           },
@@ -40,38 +32,42 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Any other ethnic group",
                 "Asian",
                 "Black",
                 "Chinese",
                 "Mixed",
                 "Not stated",
-                "White"
+                "White",
+                ""
               ]
             }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
           },
           {
             "name": "Sex",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Female",
-                "Male"
+                "Male",
+                ""
               ]
             }
           },
           {
-            "name": "Unit measure",
+            "name": "BMI",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Obese",
+                "Overweight",
+                "Underweight",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -79,12 +75,16 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Unit measure",
+            "type": "string"
           },
           {
-            "name": "Year",
+            "name": "GeoCode",
             "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

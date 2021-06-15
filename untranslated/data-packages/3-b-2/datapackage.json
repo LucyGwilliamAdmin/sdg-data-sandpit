@@ -11,23 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Aid description (CRS code)",
+            "name": "Year",
+            "type": "integer"
+          },
+          {
+            "name": "Flow of Official Development Assistance (ODA)",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Basic health care (12220)",
-                "Basic health infrastructure (12230)",
-                "Basic nutrition (12240)",
-                "Health education (12261)",
-                "Health personnel development (12281)",
-                "Health policy and administrative management (12110)",
-                "Infectious disease control (12250)",
-                "Malaria control (12262)",
-                "Medical education/training (12181)",
-                "Medical research (12182)",
-                "Medical services (12191)",
-                "Tuberculosis control (12263)"
+                "Bilateral",
+                "Multilateral",
+                ""
               ]
             }
           },
@@ -36,20 +30,30 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Basic health (122)",
-                "Health, general (121)"
+                "Health, general (121)",
+                ""
               ]
             }
           },
           {
-            "name": "Flow of Official Development Assistance (ODA)",
+            "name": "Aid description (CRS code)",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Bilateral",
-                "Multilateral"
+                "Basic health care (12220)",
+                "Basic health infrastructure (12230)",
+                "Basic nutrition (12240)",
+                "Health education (12261)",
+                "Health personnel development (12281)",
+                "Infectious disease control (12250)",
+                "Malaria control (12262)",
+                "Tuberculosis control (12263)",
+                "Health policy and administrative management (12110)",
+                "Medical education/training (12181)",
+                "Medical research (12182)",
+                "Medical services (12191)",
+                ""
               ]
             }
           },
@@ -58,20 +62,16 @@
             "type": "string"
           },
           {
-            "name": "Unit measure",
+            "name": "Unit multiplier",
             "type": "string"
           },
           {
-            "name": "Unit multiplier",
+            "name": "Unit measure",
             "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

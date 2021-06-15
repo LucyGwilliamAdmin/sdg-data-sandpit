@@ -11,31 +11,19 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
-            "type": "number"
-          },
-          {
-            "name": "Unit measure",
-            "type": "string"
-          },
-          {
-            "name": "Unit multiplier",
-            "type": "string"
-          },
-          {
-            "name": "Value",
-            "type": "number"
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Water resources management category",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Enabling environment",
-                "Financing",
                 "Institutions and participation",
-                "Management instruments"
+                "Management instruments",
+                "Financing",
+                ""
               ]
             }
           },
@@ -44,42 +32,54 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Aquifer management instruments",
-                "Arrangements for transboundary water management in most important basins and aquifers",
-                "Basin and aquifer level organizations for leading implementation of integrated water resources management (IWRM) plans",
+                "National water resources policy",
+                "National water resources law",
+                "National integrated water resources management (IWRM) plans",
+                "Sub-national water resources policies",
                 "Basin and aquifer management plans",
-                "Basin management instruments",
-                "Business participation in water resources development, management and use at national level",
+                "Arrangements for transboundary water management in most important basins and aquifers",
+                "Provincial and state water resources laws",
+                "National government authority capacity for leading implementation of national integrated water resources management (IWRM) plans",
                 "Coordination between national government authorities representing different sectors on water resources, policy, planning and management",
-                "Data and information sharing within countries at all levels",
+                "Public participation in water resources, policy, planning and management at national level",
+                "Business participation in water resources development, management and use at national level",
                 "Developing integrated water resources management (IWRM) capacity at the national level",
-                "Financing for transboundary cooperation",
-                "Management instruments to reduce impacts of water-related disasters from the national level",
+                "Basin and aquifer level organizations for leading implementation of integrated water resources management (IWRM) plans",
+                "Public participation in water resources, policy, planning and management at the local level",
+                "Organizational framework for transboundary water management for most important basins and aquifers",
+                "National monitoring of water availability",
+                "Sustainable and efficient water use management from the national level",
+                "Pollution control from the national level",
                 "Management of water-related ecosystems from the national level",
+                "Management instruments to reduce impacts of water-related disasters from the national level",
+                "Basin management instruments",
+                "Aquifer management instruments",
+                "Data and information sharing within countries at all levels",
+                "Transboundary data and information sharing between countries",
                 "National budget for investment including water resources infrastructure",
                 "National budget for the recurrent costs of the integrated water resources management (IWRM) elements",
-                "National government authority capacity for leading implementation of national integrated water resources management (IWRM) plans",
-                "National integrated water resources management (IWRM) plans",
-                "National monitoring of water availability",
-                "National water resources law",
-                "National water resources policy",
-                "Organizational framework for transboundary water management for most important basins and aquifers",
-                "Pollution control from the national level",
-                "Provincial and state water resources laws",
-                "Public participation in water resources, policy, planning and management at national level",
-                "Public participation in water resources, policy, planning and management at the local level",
-                "Revenues raised from dedicated levies on water users at basin, aquifer or sub-national levels",
                 "Sub-national or basin budgets for investment including water resources infrastructure",
-                "Sub-national water resources policies",
-                "Sustainable and efficient water use management from the national level",
-                "Transboundary data and information sharing between countries"
+                "Revenues raised from dedicated levies on water users at basin, aquifer or sub-national levels",
+                "Financing for transboundary cooperation",
+                ""
               ]
             }
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "Observation status",
+            "type": "number"
+          },
+          {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

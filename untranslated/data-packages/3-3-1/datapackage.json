@@ -11,41 +11,45 @@
       "schema": {
         "fields": [
           {
-            "name": "Age",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "15 to 24",
-                "25 to 34",
-                "35 to 49",
-                "50 to 64",
-                "Over 65",
-                "Under 15"
-              ]
-            }
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Country",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "England",
-                "Northern Ireland",
                 "Scotland",
-                "Wales"
+                "Wales",
+                "Northern Ireland",
+                ""
               ]
             }
           },
           {
-            "name": "Ethnicity",
+            "name": "Sex",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Black African",
-                "Non Black African"
+                "Male",
+                "Female",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Under 15",
+                "15 to 24",
+                "25 to 34",
+                "35 to 49",
+                "50 to 64",
+                "Over 65",
+                ""
               ]
             }
           },
@@ -54,29 +58,21 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Sex between men",
                 "Heterosexual contact",
                 "Injecting drug use",
-                "Sex between men"
+                ""
               ]
             }
           },
           {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Sex",
+            "name": "Ethnicity",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Female",
-                "Male"
+                "Non Black African",
+                "Black African",
+                ""
               ]
             }
           },
@@ -85,16 +81,20 @@
             "type": "string"
           },
           {
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
             "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "GeoCode",
             "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "integer"
           }
         ]
       }

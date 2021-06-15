@@ -11,28 +11,39 @@
       "schema": {
         "fields": [
           {
-            "name": "Age",
+            "name": "Year",
+            "type": "string"
+          },
+          {
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "16 to 17",
-                "18 to 24"
+                "1. Seasonally adjusted percentage (%)",
+                "2. Not seasonally adjusted percentage (%)",
+                ""
               ]
             }
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
           },
           {
             "name": "Sex",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Men",
-                "Women"
+                "Women",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "16 to 17",
+                "18 to 24",
+                ""
               ]
             }
           },
@@ -45,23 +56,12 @@
             "type": "string"
           },
           {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "1. Seasonally adjusted percentage (%)",
-                "2. Not seasonally adjusted percentage (%)"
-              ]
-            }
+            "name": "Observation status",
+            "type": "string"
           },
           {
             "name": "Value",
             "type": "number"
-          },
-          {
-            "name": "Year",
-            "type": "string"
           }
         ]
       }

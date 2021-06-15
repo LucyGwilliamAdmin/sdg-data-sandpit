@@ -11,38 +11,38 @@
       "schema": {
         "fields": [
           {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Source of revenue",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Capital grants from private sector",
-                "Capital transfers to central government",
-                "Current grants from central government",
-                "Current grants to central government",
-                "Interest and dividends",
-                "Less gross operating surplus",
-                "Market output",
-                "Market output and output for own final use",
-                "National insurance contributions",
-                "Other receipts",
-                "Pension contributions",
-                "Taxes"
-              ]
-            }
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Type of government",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Central government",
-                "Local government"
+                "Local government",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Source of revenue",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Taxes",
+                "National insurance contributions",
+                "Interest and dividends",
+                "Other receipts",
+                "Market output and output for own final use",
+                "Pension contributions",
+                "Current grants to central government",
+                "Capital transfers to central government",
+                "Less gross operating surplus",
+                "Market output",
+                "Current grants from central government",
+                "Capital grants from private sector",
+                ""
               ]
             }
           },
@@ -55,12 +55,12 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Observation status",
+            "type": "string"
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

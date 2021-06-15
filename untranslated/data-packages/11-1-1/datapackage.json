@@ -11,26 +11,17 @@
       "schema": {
         "fields": [
           {
-            "name": "Age of oldest person",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "59 and under",
-                "60 and over",
-                "75 and over"
-              ]
-            }
+            "name": "Year",
+            "type": "integer"
           },
           {
-            "name": "Age of youngest person",
+            "name": "Units",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "15 and under",
-                "16 and over",
-                "4 and under"
+                "Dwelling (%)",
+                "Household (%)",
+                ""
               ]
             }
           },
@@ -39,85 +30,11 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
                 "Minimum Standard (HHSRS)",
-                "Modern facilities and services",
                 "Repair",
-                "Thermal comfort"
-              ]
-            }
-          },
-          {
-            "name": "Disability status",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Disabled (GSS harmonised)",
-                "Non-disabled (GSS harmonised)"
-              ]
-            }
-          },
-          {
-            "name": "Ethnicity of household reference person (HRP)",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "All minority",
-                "Asian",
-                "Black",
-                "Other",
-                "White"
-              ]
-            }
-          },
-          {
-            "name": "Income group",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "1st quintile (lowest)",
-                "2nd quintile",
-                "3rd quintile",
-                "4th quintile",
-                "5th quintile (highest)"
-              ]
-            }
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
-          },
-          {
-            "name": "Sub-national area",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "North",
-                "Rest of England",
-                "South East"
-              ]
-            }
-          },
-          {
-            "name": "Unit measure",
-            "type": "string"
-          },
-          {
-            "name": "Unit multiplier",
-            "type": "string"
-          },
-          {
-            "name": "Units",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "Dwelling (%)",
-                "Household (%)"
+                "Modern facilities and services",
+                "Thermal comfort",
+                ""
               ]
             }
           },
@@ -126,23 +43,106 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Other Rural Area",
                 "city centre",
                 "other urban centre",
-                "rural residential",
                 "suburban residential",
-                "village centre"
+                "rural residential",
+                "village centre",
+                "Other Rural Area",
+                ""
               ]
             }
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Sub-national area",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "North",
+                "South East",
+                "Rest of England",
+                ""
+              ]
+            }
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Age of oldest person",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "59 and under",
+                "60 and over",
+                "75 and over",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Age of youngest person",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "4 and under",
+                "15 and under",
+                "16 and over",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Income group",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "1st quintile (lowest)",
+                "2nd quintile",
+                "3rd quintile",
+                "4th quintile",
+                "5th quintile (highest)",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Disability status",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Disabled (GSS harmonised)",
+                "Non-disabled (GSS harmonised)",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Ethnicity of household reference person (HRP)",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "White",
+                "Black",
+                "Asian",
+                "Other",
+                "All minority",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Unit measure",
+            "type": "string"
+          },
+          {
+            "name": "Observation status",
+            "type": "string"
+          },
+          {
+            "name": "Unit multiplier",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

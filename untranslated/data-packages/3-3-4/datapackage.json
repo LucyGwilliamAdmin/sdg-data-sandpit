@@ -11,41 +11,24 @@
       "schema": {
         "fields": [
           {
-            "name": "Age",
-            "type": "string",
-            "constraints": {
-              "enum": [
-                "",
-                "20 and under",
-                "21 to 40",
-                "41 to 60",
-                "61 and over"
-              ]
-            }
-          },
-          {
-            "name": "GeoCode",
-            "type": "string"
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Year",
+            "type": "integer"
           },
           {
             "name": "Region",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "London",
                 "East Midlands",
                 "East of England",
-                "London",
-                "North East",
                 "North West",
                 "South East",
                 "South West",
                 "West Midlands",
-                "Yorkshire and the Humber"
+                "Yorkshire and the Humber",
+                "North East",
+                ""
               ]
             }
           },
@@ -54,14 +37,27 @@
             "type": "string",
             "constraints": {
               "enum": [
-                "",
+                "Male",
                 "Female",
-                "Male"
+                ""
               ]
             }
           },
           {
-            "name": "Unit measure",
+            "name": "Age",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "20 and under",
+                "21 to 40",
+                "41 to 60",
+                "61 and over",
+                ""
+              ]
+            }
+          },
+          {
+            "name": "Observation status",
             "type": "string"
           },
           {
@@ -69,12 +65,16 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Unit measure",
+            "type": "string"
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "GeoCode",
+            "type": "string"
+          },
+          {
+            "name": "Value",
+            "type": "number"
           }
         ]
       }

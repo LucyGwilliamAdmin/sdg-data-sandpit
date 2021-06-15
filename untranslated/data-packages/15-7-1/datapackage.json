@@ -11,27 +11,27 @@
       "schema": {
         "fields": [
           {
+            "name": "Year",
+            "type": "integer"
+          },
+          {
             "name": "Endangered species type",
             "type": "string",
             "constraints": {
               "enum": [
-                "",
-                "Butterflies",
                 "Caviar and caviar extract",
+                "Live coral and coral derivatives",
                 "Ivory and items containing ivory",
                 "Live animals and birds",
-                "Live coral and coral derivatives",
                 "Live plants",
                 "Parts or derivatives of animals or birds",
                 "Parts or derivatives of plants",
+                "Timber or wood products",
                 "Preparations of oriental medicine which include parts and derivatives of endangered species",
-                "Timber or wood products"
+                "Butterflies",
+                ""
               ]
             }
-          },
-          {
-            "name": "Observation status",
-            "type": "string"
           },
           {
             "name": "Unit measure",
@@ -42,12 +42,12 @@
             "type": "string"
           },
           {
-            "name": "Value",
-            "type": "number"
+            "name": "Observation status",
+            "type": "string"
           },
           {
-            "name": "Year",
-            "type": "integer"
+            "name": "Value",
+            "type": "number"
           }
         ]
       }
