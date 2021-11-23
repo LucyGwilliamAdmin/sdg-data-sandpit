@@ -15,8 +15,14 @@
             "type": "integer"
           },
           {
-            "name": "Observation status",
-            "type": "string"
+            "name": "Observation",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "Estimate",
+                ""
+              ]
+            }
           },
           {
             "name": "Unit multiplier",
