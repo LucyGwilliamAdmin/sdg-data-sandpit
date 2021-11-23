@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 Year,Obs,Unit multiplier,Unit measure,Value
+=======
+<<<<<<< HEAD
+Year,Observation,Unit multiplier,Unit measure,Value
+=======
+Year,Obs,Unit multiplier,Unit measure,Value
+>>>>>>> LucyGwilliamAdmin-patch-3
+>>>>>>> conflicts-fix
 2004,Estimate,Units,Percentage (%),0.4
 2005,Estimate,Units,Percentage (%),0.5
 2006,Estimate,Units,Percentage (%),0.2
